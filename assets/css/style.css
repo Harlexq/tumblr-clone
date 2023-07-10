@@ -51,6 +51,10 @@ body {
 .header {
     background-color: #000;
     border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .header .header-inner {
@@ -149,17 +153,19 @@ body {
 }
 
 .write-text {
-    margin-top: 35px
+    margin-top: 100px;
 }
 
 .write-text .write-text-inner {
     display: flex;
+    justify-content: center;
     column-gap: 30px;
 }
 
 .write-text .write-text-inner .write-text-content {
     display: flex;
     column-gap: 25px;
+    position: relative;
 }
 
 .write-text .write-text-inner .write-text-user img {
@@ -218,6 +224,115 @@ body {
 
 .user-btn .user-btn-inner .user-btn-menu .user-btn-item.active:hover {
     background-color: transparent;
+}
+
+.post {
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.post .post-inner {
+    display: flex;
+    column-gap: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.post .post-inner .post-img img {
+    border-radius: 3px;
+    position: sticky;
+    top: 70px;
+    cursor: pointer;
+}
+
+.post .post-inner .post-user .post-user-info {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 20px;
+}
+
+.post .post-inner .post-user .post-user-info:hover {
+    background-color: #2b2b2b;
+}
+
+.post .post-inner .post-user .post-user-info .post-user-name {
+    display: flex;
+    column-gap: 10px;
+}
+
+.post .post-inner .post-user .post-user-info .post-user-name p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.post .post-inner .post-user .post-user-info .post-user-name button {
+    color: var(--blue);
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.post .post-inner .post-user .post-user-info .post-user-name button:hover {
+    text-decoration: underline var(--blue);
+}
+
+.post .post-inner .post-user .post-user-info .post-user-intr {
+    display: flex;
+    column-gap: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post .post-inner .post-user .post-user-info .post-user-intr:hover {
+    background-color: rgba(var(--white-on-dark), .04);
+}
+
+.post .post-inner .post-user .post-user-info .post-user-intr i {
+    font-size: 20px;
+    color: #a0a0a0;
+}
+
+.post .post-inner .post-user .post-content {
+    background-color: #222222;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.post .post-inner .post-user .post-content p {
+    padding: 15px;
+    line-height: 25px;
+}
+
+.post .post-inner .post-user .post-content .post-hash {
+    padding: 15px;
+    color: #a9a9a9;
+}
+
+.post .post-inner .post-user .post-content .post-hash span {
+    margin-right: 15px;
+}
+
+.post .post-inner .post-user .post-content .radar-fire,
+.post .post-inner .post-user .post-content .radar-fire p {
+    margin: 0;
+    border: none;
+}
+
+.post .post-inner .post-user .post-content .radar-intr {
+    padding: 15px;
 }
 
 .browse {
@@ -318,6 +433,10 @@ body {
 
 .browse .browse-inner .radar-title {
     margin-top: 50px;
+    padding: 0 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
 }
 
 .radar .radar-inner {
@@ -389,25 +508,25 @@ body {
     height: 400px;
 }
 
-.radar .radar-inner .radar-card .radar-fire {
+.radar-fire {
     border-bottom: 1px solid var(--gray);
     margin: 0 10px;
 }
 
-.radar .radar-inner .radar-card .radar-fire p {
+.radar-fire p {
     margin: 30px 0 10px;
     color: #b2b2b2;
     font-weight: 600;
 }
 
-.radar .radar-inner .radar-card .radar-intr {
+.radar-intr {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 10px;
 }
 
-.radar .radar-inner .radar-card .radar-intr .radar-intr-not {
+.radar-intr .radar-intr-not {
     width: 103px;
     height: 36px;
     border: 1px solid var(--gray);
@@ -417,39 +536,43 @@ body {
     align-items: center;
 }
 
-.radar .radar-inner .radar-card .radar-intr .radar-intr-user .radar-menu {
+.radar-intr .radar-intr-user .radar-menu {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
 
-.radar .radar-inner .radar-card .radar-intr .radar-intr-user .radar-menu i {
+.radar-intr .radar-intr-user .radar-menu i {
     color: var(--lightgray);
     font-size: 20px;
 }
 
-.browse .browse-inner .sponsor-title {
+.sponsor-title {
     margin-top: 50px;
+    position: sticky;
+    top: 60px;
+    padding: 0 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
 }
 
-.browse .browse-inner .sponsor {
+.sponsor {
     margin-top: 15px;
     padding: 0 10px;
+    position: sticky;
+    top: 110px;
 }
 
-.browse .browse-inner .tumblr-info {
-    margin: 15px 0 15px 0;
+.tumblr-info-menu {
+    margin: 15px 0;
     padding: 0 10px;
     position: sticky;
-    bottom: 0;
+    top: 95%;
 }
 
-.browse .browse-inner .tumblr-info-menu a {
+.tumblr-info-menu a {
     color: var(--blue);
     font-size: 12px;
     margin: 0 10px 0 0;
-}
-
-.scascsa {
-    margin-top: 80000px;
 }
