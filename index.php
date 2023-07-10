@@ -190,15 +190,13 @@
                         <h1 class="sponsor-title">Sponsorlu</h1>
                         <div class="sponsor">
                             <a href="#">Reklamları kapatmak ister misin?</a>
-                            <div class="tumblr-info">
-                                <footer class="tumblr-info-menu">
-                                    <a href="#">Hakkında</a>
-                                    <a href="#">Uygulamalar</a>
-                                    <a href="#">Hukuki</a>
-                                    <a href="#">Gizlilik</a>
-                                </footer>
-                            </div>
                         </div>
+                        <footer class="tumblr-info-menu">
+                            <a href="#">Hakkında</a>
+                            <a href="#">Uygulamalar</a>
+                            <a href="#">Hukuki</a>
+                            <a href="#">Gizlilik</a>
+                        </footer>
                     </div>
                 </aside>
             </div>

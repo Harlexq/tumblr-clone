@@ -437,11 +437,14 @@ body {
     padding: 0 10px;
 }
 
-.browse .browse-inner .sponsor .tumblr-info {
+.browse .browse-inner .tumblr-info {
     margin: 15px 0 15px 0;
+    padding: 0 10px;
+    position: sticky;
+    bottom: 0;
 }
 
-.browse .browse-inner .sponsor .tumblr-info .tumblr-info-menu a {
+.browse .browse-inner .tumblr-info-menu a {
     color: var(--blue);
     font-size: 12px;
     margin: 0 10px 0 0;
