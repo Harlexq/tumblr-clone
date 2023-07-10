@@ -17,10 +17,10 @@
         <div class="container-fluid header-inner">
             <div class="navbar-brand">
                 <img src="assets/img/logo.png" alt="">
-                <div class="search">
+                <form class="search">
                     <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <input class="search-input" type="text" placeholder="Tumblr'ı Ara">
-                </div>
+                </form>
             </div>
             <nav class="nav">
                 <menu class="navbar">
