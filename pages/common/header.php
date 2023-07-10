@@ -9,10 +9,10 @@
         </div>
         <nav class="nav">
             <menu class="navbar">
-                <a class="nav-item active" href="#"><i class="fa-solid fa-house"></i></a>
-                <a class="nav-item" href="#"><i class="fa-regular fa-compass"></i></a>
+                <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') echo 'active'; ?>" href="index.php"><i class="fa-solid fa-house"></i></a>
+                <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'today.php') echo 'active'; ?>" href="today.php"><i class="fa-regular fa-compass"></i></a>
                 <a class="nav-item" href="#"><i class="fa-solid fa-store"></i></a>
-                <a class="nav-item" href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'inbox.php') echo 'active'; ?>" href="inbox.php"><i class="fa-solid fa-envelope"></i></a>
                 <a class="nav-item" href="#"><i class="fa-solid fa-face-smile"></i></a>
                 <a class="nav-item" href="#"><i class="fa-solid fa-bolt-lightning"></i></a>
                 <a class="nav-item" href="#"><i class="fa-solid fa-user"></i></a>
