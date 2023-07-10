@@ -16,7 +16,9 @@
     <header class="header">
         <div class="container-fluid header-inner">
             <div class="navbar-brand">
-                <img src="assets/img/logo.png" alt="">
+                <a href="index.php">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
                 <form class="search">
                     <input class="search-input" type="text" placeholder="Tumblr'ı Ara">
                     <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
