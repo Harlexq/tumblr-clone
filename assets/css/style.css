@@ -73,7 +73,9 @@ body {
 
 .header .header-inner .navbar-brand .search {
     display: flex;
+    flex-direction: row-reverse;
     background-color: var(--gray);
+    border-radius: 5px;
 }
 
 .header .header-inner .navbar-brand .search .search-input {
@@ -83,10 +85,11 @@ body {
     line-height: 34px;
     width: 448px;
     color: var(--lightgray);
-    border-radius: 3px;
     caret-color: #fff;
     padding: 0 5px;
     transition: .3s ease;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .header .header-inner .navbar-brand .search .search-input::placeholder {
@@ -105,7 +108,14 @@ body {
     border: none;
     height: 34px;
     width: 40px;
-    border-radius: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: .3s ease;
+}
+
+.header .header-inner .navbar-brand .search .search-input:focus+.search-btn {
+    background-color: #222222;
+    color: #777777;
 }
 
 .header .header-inner .navbar-brand .search .search-btn i {
@@ -182,19 +192,6 @@ body {
     transform: translateY(-4px);
 }
 
-.browse {
-    width: 320px;
-}
-
-.browse .browse-inner h1 {
-    padding: 0 10px 10px;
-    font-size: 20px;
-    font-weight: 700;
-    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
-}
-
-
-
 .user-btn {
     margin-top: 25px;
 }
@@ -221,4 +218,235 @@ body {
 
 .user-btn .user-btn-inner .user-btn-menu .user-btn-item.active:hover {
     background-color: transparent;
+}
+
+.browse {
+    width: 320px;
+}
+
+.browse .browse-inner h1 {
+    padding: 0 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+.browse .browse-inner .follow .discovery {
+    color: var(--blue);
+    margin-top: 12px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.browse .browse-inner .follow .discovery:hover {
+    text-decoration: underline var(--blue);
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item {
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item:first-child {
+    margin-top: 8px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item:hover {
+    background-color: #121212;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-info {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-info .follow-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-info .follow-name p,
+.browse .browse-inner .follow .follow-inner .follow-item .user-info .follow-name span {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-info .follow-name span {
+    color: #8d8d8d;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-info img {
+    height: 37px;
+    width: 37px;
+    border-radius: 4px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-intr {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-intr p {
+    color: var(--blue);
+    font-size: 15px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-intr i {
+    font-size: 10px;
+    font-weight: 600;
+    color: #808080;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-intr i:hover {
+    color: #fff;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-intr p:hover {
+    text-decoration: underline var(--blue);
+}
+
+.browse .browse-inner .radar-title {
+    margin-top: 50px;
+}
+
+.radar .radar-inner {
+    background-color: #222222;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.radar .radar-inner .radar-card .radar-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-user-info {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-user-info .radar-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-user-info .radar-name p {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-user-info .radar-name span {
+    font-size: 14px;
+    color: var(--blue);
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-user-info .radar-name span:hover {
+    text-decoration: underline var(--blue);
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-ellips {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-ellips:hover {
+    background-color: rgba(var(--white-on-dark), .04);
+}
+
+.radar .radar-inner .radar-card .radar-info .radar-ellips i {
+    font-size: 20px;
+    color: #a0a0a0;
+}
+
+.radar .radar-inner .radar-card .radar-img img {
+    width: 320px;
+    height: 400px;
+}
+
+.radar .radar-inner .radar-card .radar-fire {
+    border-bottom: 1px solid var(--gray);
+    margin: 0 10px;
+}
+
+.radar .radar-inner .radar-card .radar-fire p {
+    margin: 30px 0 10px;
+    color: #b2b2b2;
+    font-weight: 600;
+}
+
+.radar .radar-inner .radar-card .radar-intr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+}
+
+.radar .radar-inner .radar-card .radar-intr .radar-intr-not {
+    width: 103px;
+    height: 36px;
+    border: 1px solid var(--gray);
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radar .radar-inner .radar-card .radar-intr .radar-intr-user .radar-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.radar .radar-inner .radar-card .radar-intr .radar-intr-user .radar-menu i {
+    color: var(--lightgray);
+    font-size: 20px;
+}
+
+.browse .browse-inner .sponsor-title {
+    margin-top: 50px;
+}
+
+.browse .browse-inner .sponsor {
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.browse .browse-inner .sponsor .tumblr-info {
+    margin: 15px 0 15px 0;
+}
+
+.browse .browse-inner .sponsor .tumblr-info .tumblr-info-menu a {
+    color: var(--blue);
+    font-size: 12px;
+    margin: 0 10px 0 0;
+}
+
+.scascsa {
+    margin-top: 80000px;
 }

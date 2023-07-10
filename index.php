@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serhan Bakır</title>
+    <title>Tumblr</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -18,8 +18,8 @@
             <div class="navbar-brand">
                 <img src="assets/img/logo.png" alt="">
                 <form class="search">
-                    <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <input class="search-input" type="text" placeholder="Tumblr'ı Ara">
+                    <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
             <nav class="nav">
@@ -87,36 +87,117 @@
                                 </menu>
                             </div>
                         </div>
+                        <div class="scascsa"></div>
                     </div>
                 </div>
                 <aside class="browse">
                     <div class="browse-inner">
                         <h1>Bu bloglara göz at</h1>
                         <div class="follow">
-                            <!-- <a href="#" class="follow-item">
-                                <img src="assets/img/follow1.jpg" alt="">
-                                <p>fotokopicibierkek</p>
-                                <p class="follow-text-color">Takip Et</p>
-                                <i class="fa-solid fa-x"></i>
-                            </a>
-                            <a href="#" class="follow-item">
-                                <img src="assets/img/follow1.jpg" alt="">
-                                <p>fotokopicibierkek</p>
-                                <p class="follow-text-color">Takip Et</p>
-                                <i class="fa-solid fa-x"></i>
-                            </a>
-                            <a href="#" class="follow-item">
-                                <img src="assets/img/follow1.jpg" alt="">
-                                <p>fotokopicibierkek</p>
-                                <p class="follow-text-color">Takip Et</p>
-                                <i class="fa-solid fa-x"></i>
-                            </a>
-                            <a href="#" class="follow-item">
-                                <img src="assets/img/follow1.jpg" alt="">
-                                <p>fotokopicibierkek</p>
-                                <p class="follow-text-color">Takip Et</p>
-                                <i class="fa-solid fa-x"></i>
-                            </a> -->
+                            <div class="follow-inner">
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="discovery">Tumblr'da keşfe çık</a>
+                        </div>
+                        <h1 class="radar-title">Radar</h1>
+                        <div class="radar">
+                            <div class="radar-inner">
+                                <a href="#" class="radar-card">
+                                    <div class="radar-info">
+                                        <div class="radar-user-info">
+                                            <img src="assets/img/follow1.jpg" alt="">
+                                            <div class="radar-name">
+                                                <p>Harlex</p>
+                                                <span>Takip Et</span>
+                                            </div>
+                                        </div>
+                                        <div class="radar-ellips">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                    <div class="radar-img">
+                                        <img src="assets/img/radar.jpg" alt="">
+                                    </div>
+                                    <div class="radar-fire">
+                                        <p><i class="fa-solid fa-fire"></i> Ateşle</p>
+                                    </div>
+                                    <div class="radar-intr">
+                                        <div class="radar-intr-not">
+                                            <p><strong>1.186</strong> not</p>
+                                        </div>
+                                        <div class="radar-intr-user">
+                                            <menu class="radar-menu">
+                                                <i class="fa-solid fa-share"></i>
+                                                <i class="fa-solid fa-retweet"></i>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </menu>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <h1 class="sponsor-title">Sponsorlu</h1>
+                        <div class="sponsor">
+                            <a href="#">Reklamları kapatmak ister misin?</a>
+                            <div class="tumblr-info">
+                                <footer class="tumblr-info-menu">
+                                    <a href="#">Hakkında</a>
+                                    <a href="#">Uygulamalar</a>
+                                    <a href="#">Hukuki</a>
+                                    <a href="#">Gizlilik</a>
+                                </footer>
+                            </div>
                         </div>
                     </div>
                 </aside>
