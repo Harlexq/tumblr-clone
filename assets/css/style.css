@@ -1,0 +1,224 @@
+/*
+    Serhan Bakır
+    Junior Web Developer
+    Ajans: Digital Küre
+    Mail: serhan@digitalkure.com
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --gray: #404040;
+    --lightgray: #b4b4b4;
+    --blue: #00b8ff;
+    --white-on-dark: 255, 255, 255;
+}
+
+.container-fluid {
+    width: 1716px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 990px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    background-color: #000;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+.header .header-inner {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-inner .navbar-brand {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header .header-inner .navbar-brand img {
+    width: 20px;
+    height: 33px;
+}
+
+.header .header-inner .navbar-brand .search {
+    display: flex;
+    background-color: var(--gray);
+}
+
+.header .header-inner .navbar-brand .search .search-input {
+    background-color: var(--gray);
+    outline: none;
+    border: none;
+    line-height: 34px;
+    width: 448px;
+    color: var(--lightgray);
+    border-radius: 3px;
+    caret-color: #fff;
+    padding: 0 5px;
+    transition: .3s ease;
+}
+
+.header .header-inner .navbar-brand .search .search-input::placeholder {
+    color: var(--lightgray);
+    font-size: 16px;
+}
+
+.header .header-inner .navbar-brand .search .search-input:focus {
+    background-color: #222222;
+    color: #777777;
+}
+
+.header .header-inner .navbar-brand .search .search-btn {
+    background-color: var(--gray);
+    outline: none;
+    border: none;
+    height: 34px;
+    width: 40px;
+    border-radius: 3px;
+}
+
+.header .header-inner .navbar-brand .search .search-btn i {
+    color: var(--lightgray);
+    font-size: 18px;
+}
+
+.header .header-inner .nav .navbar {
+    display: flex;
+    column-gap: 30px;
+}
+
+.header .header-inner .nav .navbar .nav-item {
+    font-size: 22px;
+    color: #a6a6a6;
+}
+
+.header .header-inner .nav .navbar .nav-item.active {
+    color: #fff;
+}
+
+.header .header-inner .nav .navbar .nav-item.nav-pencil {
+    background-color: var(--blue);
+    color: #000;
+    width: 45px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.write-text {
+    margin-top: 35px
+}
+
+.write-text .write-text-inner {
+    display: flex;
+    column-gap: 30px;
+}
+
+.write-text .write-text-inner .write-text-content {
+    display: flex;
+    column-gap: 25px;
+}
+
+.write-text .write-text-inner .write-text-user img {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+}
+
+.write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu {
+    width: 540px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu .write-info-item {
+    text-align: center;
+    color: #fff;
+}
+
+.write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu .write-info-item img {
+    transition: .3s;
+}
+
+.write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu .write-info-item img:hover {
+    transform: translateY(-4px);
+}
+
+.browse {
+    width: 320px;
+}
+
+.browse .browse-inner h1 {
+    padding: 0 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+
+
+.user-btn {
+    margin-top: 25px;
+}
+
+.user-btn .user-btn-inner .user-btn-menu {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+.user-btn .user-btn-inner .user-btn-menu .user-btn-item {
+    color: #fff;
+    padding: 14px 16px;
+}
+
+.user-btn .user-btn-inner .user-btn-menu .user-btn-item:hover {
+    background-color: rgba(var(--white-on-dark), .13);
+}
+
+.user-btn .user-btn-inner .user-btn-menu .user-btn-item.active {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+
+.user-btn .user-btn-inner .user-btn-menu .user-btn-item.active:hover {
+    background-color: transparent;
+}
