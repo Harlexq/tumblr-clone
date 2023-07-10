@@ -5,6 +5,31 @@
     Mail: serhan@digitalkure.com
 */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1087px) {
+    .browse {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    .header .header-inner .navbar-brand .search .search-input {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .header {
+        display: none;
+    }
+
+    .write-text .write-text-inner .write-text-info .write-info-inner,
+    .write-text .write-text-inner .write-text-user img {
+        display: none;
+    }
+
+    .post {
+        position: relative;
+    }
+}
 
 @media only screen and (max-width: 500px) {}

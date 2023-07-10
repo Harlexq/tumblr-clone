@@ -1,7 +1,7 @@
 /*
-    Serhan Bakır
+    Serhan BakÄ±r
     Junior Web Developer
-    Ajans: Digital Küre
+    Ajans: Digital KÃ¼re
     Mail: serhan@digitalkure.com
 */
 
@@ -160,6 +160,7 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 30px;
+    flex-wrap: wrap;
 }
 
 .write-text .write-text-inner .write-text-content {
