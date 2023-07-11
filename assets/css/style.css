@@ -232,10 +232,101 @@ body {
     padding-right: 15px;
 }
 
+.write-text .write-text-inner .write-text-user {
+    position: relative;
+}
+
 .write-text .write-text-inner .write-text-user img {
     width: 64px;
     height: 64px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info {
+    position: absolute;
+    top: 64px;
+    left: -113px;
+    width: 280px;
+    background-image: url(../img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 5px;
+    display: none;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info:hover {
+    display: block;
+}
+
+.write-text .write-text-inner .write-text-user img:hover+.write-user-info {
+    display: block;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info .write-user-intr {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info .write-user-intr p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-icons {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 10px;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-icons i {
+    color: #fff;
+    font-size: 23px;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info .write-user-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -22px;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info .write-user-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info .write-user-desc {
+    background-color: #fff;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info .write-user-desc h2 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.write-text .write-text-inner .write-text-user .write-user-info .write-user-desc p {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu {

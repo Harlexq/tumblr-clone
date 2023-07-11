@@ -28,6 +28,24 @@
                 <div class="write-text-content">
                     <div class="write-text-user">
                         <img src="assets/img/SerhanBakir.jpg" alt="">
+                        <header class="write-user-info">
+                            <div class="write-user-info-inner">
+                                <div class="write-user-intr">
+                                    <p>harlex0</p>
+                                    <div class="write-user-icons">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                                <div class="write-user-img">
+                                    <img src="assets/img/SerhanBakir.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="write-user-desc">
+                                <h2>Serhan Bakır</h2>
+                                <p>Junior Web Developer</p>
+                            </div>
+                        </header>
                     </div>
                     <div class="write-text-info">
                         <div class="write-info-inner">
