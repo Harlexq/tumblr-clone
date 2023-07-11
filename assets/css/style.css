@@ -1,7 +1,7 @@
 /*
-    Serhan BakÄ±r
+    Serhan BakÃ„Â±r
     Junior Web Developer
-    Ajans: Digital KÃ¼re
+    Ajans: Digital KÃƒÂ¼re
     Mail: serhan@digitalkure.com
 */
 
@@ -64,7 +64,8 @@ body {
     align-items: center;
 }
 
-.header .header-inner .navbar-brand {
+.header .header-inner .navbar-brand,
+.header .header-inner .navbar-brand a {
     display: flex;
     align-items: center;
     column-gap: 20px;
@@ -200,9 +201,35 @@ body {
     position: relative;
 }
 
+.write-text .write-text-inner .write-text-content .write-text-none {
+    width: 540px;
+    height: 355px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.write-text .write-text-inner .write-text-content .write-text-none img {
+    width: 80px;
+    height: 80px;
+}
+
+.write-text .write-text-inner .write-text-content .write-text-none a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #6e6f71;
+}
+
+.write-text .write-text-inner .write-text-content .write-text-none p {
+    margin-top: 5px;
+    color: #acacac;
+}
+
 .write-text .write-text-inner .today-text-content {
     border-right: 1px solid var(--gray);
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
 .write-text .write-text-inner .write-text-user img {
@@ -386,7 +413,7 @@ body {
 }
 
 .today-browse {
-    padding-left: 30px;
+    padding-left: 15px;
     margin-top: 30px;
 }
 
@@ -395,6 +422,10 @@ body {
     font-size: 20px;
     font-weight: 700;
     border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+.browse .browse-inner .follow-todays {
+    margin-top: 20px;
 }
 
 .browse .browse-inner .follow .discovery {
@@ -412,6 +443,57 @@ body {
     text-decoration: underline var(--blue);
 }
 
+.browse .browse-inner .follow .follow-today-inner {
+    background-color: #121212;
+    border-radius: 3px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-title {
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+.browse .browse-inner .follow .follow-inner .follow-footer {
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    border-top: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+.browse .browse-inner .follow .follow-inner .follow-footer p {
+    font-size: 11px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-footer h2 {
+    font-size: 15px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-footer h2:hover {
+    text-decoration: underline var(--blue);
+}
+
+.browse .browse-inner .follow .follow-inner .follow-title h2 {
+    font-size: 17px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-title p {
+    font-size: 16px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-title p:hover {
+    text-decoration: underline var(--blue);
+}
+
 .browse .browse-inner .follow .follow-inner .follow-item {
     height: 59px;
     display: flex;
@@ -419,6 +501,15 @@ body {
     align-items: center;
     padding: 8px 10px;
     border-radius: 4px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-today-item {
+    display: inline-block;
+    margin: 12px 10px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-today-item:first-child {
+    margin-top: 8px;
 }
 
 .browse .browse-inner .follow .follow-inner .follow-item:first-child {
@@ -455,6 +546,12 @@ body {
     height: 37px;
     width: 37px;
     border-radius: 4px;
+}
+
+.browse .browse-inner .follow .follow-inner .follow-item .user-info .today-img-hash {
+    border-radius: 3px;
+    width: 64px;
+    height: 45px;
 }
 
 .browse .browse-inner .follow .follow-inner .follow-item .user-intr {
@@ -625,6 +722,11 @@ body {
     padding: 0 10px;
     position: sticky;
     top: 95%;
+}
+
+.inbox-info-menu {
+    position: fixed;
+    bottom: 0;
 }
 
 .tumblr-info-menu a {

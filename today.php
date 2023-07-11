@@ -353,99 +353,114 @@
                 </div>
                 <aside class="browse today-browse">
                     <div class="browse-inner">
-                        <h1>Bu bloglara göz at</h1>
                         <div class="follow">
-                            <div class="follow-inner">
-                                <a href="#" class="follow-item">
+                            <div class="follow-inner follow-today-inner">
+                                <div class="follow-title">
+                                    <h2>Takip edilen etiketler</h2>
+                                    <p>Yönet</p>
+                                </div>
+                                <a href="#" class="follow-item follow-today-item">
                                     <div class="user-info">
-                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <img class="today-img-hash" src="assets/img/today.jpg" alt="">
                                         <div class="follow-name">
-                                            <p>Harlex</p>
-                                            <span>harlex</span>
+                                            <p>#artificial intelligence</p>
+                                            <span>162 yeni gönderi</span>
                                         </div>
                                     </div>
-                                    <div class="user-intr">
-                                        <p>Takip Et</p>
-                                        <i class="fa-solid fa-x"></i>
-                                    </div>
                                 </a>
-                                <a href="#" class="follow-item">
+                                <a href="#" class="follow-item follow-today-item">
                                     <div class="user-info">
-                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <img class="today-img-hash" src="assets/img/today.jpg" alt="">
                                         <div class="follow-name">
-                                            <p>Harlex</p>
-                                            <span>harlex</span>
+                                            <p>#adobe</p>
+                                            <span>7 yeni gönderi</span>
                                         </div>
                                     </div>
-                                    <div class="user-intr">
-                                        <p>Takip Et</p>
-                                        <i class="fa-solid fa-x"></i>
-                                    </div>
                                 </a>
-                                <a href="#" class="follow-item">
+                                <a href="#" class="follow-item follow-today-item">
                                     <div class="user-info">
-                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <img class="today-img-hash" src="assets/img/today.jpg" alt="">
                                         <div class="follow-name">
-                                            <p>Harlex</p>
-                                            <span>harlex</span>
+                                            <p>#software engineering</p>
+                                            <span>7 yeni gönderi</span>
                                         </div>
                                     </div>
-                                    <div class="user-intr">
-                                        <p>Takip Et</p>
-                                        <i class="fa-solid fa-x"></i>
-                                    </div>
                                 </a>
-                                <a href="#" class="follow-item">
+                                <a href="#" class="follow-item follow-today-item">
                                     <div class="user-info">
-                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <img class="today-img-hash" src="assets/img/today.jpg" alt="">
                                         <div class="follow-name">
-                                            <p>Harlex</p>
-                                            <span>harlex</span>
+                                            <p>#rpg maker</p>
+                                            <span>9 yeni gönderi</span>
                                         </div>
                                     </div>
-                                    <div class="user-intr">
-                                        <p>Takip Et</p>
-                                        <i class="fa-solid fa-x"></i>
-                                    </div>
                                 </a>
+                                <footer class="follow-footer">
+                                    <h2>Daha fazla etiket göster</h2>
+                                </footer>
                             </div>
-                            <a href="#" class="discovery">Tumblr'da keşfe çık</a>
                         </div>
-                        <h1 class="radar-title">Radar</h1>
-                        <div class="radar">
-                            <div class="radar-inner">
-                                <a href="#" class="radar-card">
-                                    <div class="radar-info">
-                                        <div class="radar-user-info">
-                                            <img src="assets/img/follow1.jpg" alt="">
-                                            <div class="radar-name">
-                                                <p>Harlex</p>
-                                                <span>Takip Et</span>
-                                            </div>
-                                        </div>
-                                        <div class="radar-ellips">
-                                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="follow follow-todays">
+                            <div class="follow-inner follow-today-inner">
+                                <div class="follow-title">
+                                    <h2>Bu bloglara göz at</h2>
+                                </div>
+
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
                                         </div>
                                     </div>
-                                    <div class="radar-img today-img">
-                                        <img src="assets/img/radar.jpg" alt="">
-                                    </div>
-                                    <div class="radar-fire">
-                                        <p><i class="fa-solid fa-fire"></i> Ateşle</p>
-                                    </div>
-                                    <div class="radar-intr">
-                                        <div class="radar-intr-not">
-                                            <p><strong>1.186</strong> not</p>
-                                        </div>
-                                        <div class="radar-intr-user">
-                                            <menu class="radar-menu">
-                                                <i class="fa-solid fa-share"></i>
-                                                <i class="fa-solid fa-retweet"></i>
-                                                <i class="fa-regular fa-heart"></i>
-                                            </menu>
-                                        </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
                                     </div>
                                 </a>
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="follow-item">
+                                    <div class="user-info">
+                                        <img src="assets/img/follow1.jpg" alt="">
+                                        <div class="follow-name">
+                                            <p>Harlex</p>
+                                            <span>harlex</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-intr">
+                                        <p>Takip Et</p>
+                                        <i class="fa-solid fa-x"></i>
+                                    </div>
+                                </a>
+                                <footer class="follow-footer">
+                                    <h2>Daha fazla blog göster</h2>
+                                </footer>
                             </div>
                         </div>
                     </div>
