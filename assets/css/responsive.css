@@ -9,6 +9,10 @@
     .browse {
         display: none;
     }
+
+    .mobil-header {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1055px) {
@@ -22,13 +26,33 @@
         display: none;
     }
 
+    .write-text {
+        margin-top: 0;
+    }
+
     .write-text .write-text-inner .write-text-info .write-info-inner,
     .write-text .write-text-inner .write-text-user img {
         display: none;
     }
 
+    .write-text .write-text-inner .write-text-content {
+        column-gap: 0;
+    }
+
     .post {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post .post-inner {
+        column-gap: 0;
+    }
+
+    .post .post-inner .post-img img {
+        display: none;
     }
 }
 

@@ -18,57 +18,24 @@
     include('pages/common/mobileHeader.php');
     ?>
 
+
     <div class="container">
-        <div class="write-text">
-            <div class="write-text-inner">
-                <div class="write-text-content">
-                    <div class="write-text-user">
-                        <img src="assets/img/SerhanBakir.jpg" alt="">
-                    </div>
+        <div class="write-text today-text">
+            <div class="write-text-inner today-text-inner">
+                <div class="write-text-content today-text-content">
                     <div class="write-text-info">
-                        <div class="write-info-inner">
-                            <menu class="write-info-menu">
-                                <a href="#" class="write-info-item">
-                                    <img src="assets/img/metin.png" alt="">
-                                    <p>Metin</p>
-                                </a>
-                                <a href="#" class="write-info-item">
-                                    <img src="assets/img/fotograf.png" alt="">
-                                    <p>Fotoğraf</p>
-                                </a>
-                                <a href="#" class="write-info-item">
-                                    <img src="assets/img/alinti.png" alt="">
-                                    <p>Alıntı</p>
-                                </a>
-                                <a href="#" class="write-info-item">
-                                    <img src="assets/img/baglanti.png" alt="">
-                                    <p>Bağlantı</p>
-                                </a>
-                                <a href="#" class="write-info-item">
-                                    <img src="assets/img/sohbet.png" alt="">
-                                    <p>Sohbet</p>
-                                </a>
-                                <a href="#" class="write-info-item">
-                                    <img src="assets/img/ses.png" alt="">
-                                    <p>Ses</p>
-                                </a>
-                                <a href="#" class="write-info-item">
-                                    <img src="assets/img/video.png" alt="">
-                                    <p>Video</p>
-                                </a>
-                            </menu>
-                        </div>
-                        <div class="user-btn">
+                        <div class="user-btn today-btn">
                             <div class="user-btn-inner">
                                 <menu class="user-btn-menu">
-                                    <a class="user-btn-item active" href="#">Senin İçin</a>
-                                    <a class="user-btn-item" href="#">Takip edilenler</a>
-                                    <a class="user-btn-item" href="#">Etiketlerin</a>
-                                    <a class="user-btn-item" href="#">Yönet...</a>
+                                    <a class="user-btn-item active" href="#">Bugün</a>
+                                    <a class="user-btn-item" href="#">Senin için</a>
+                                    <a class="user-btn-item" href="#">Popüler</a>
+                                    <a class="user-btn-item" href="#">Ekibin seçtikleri</a>
+                                    <a class="user-btn-item" href="#">Cevap Zamanı</a>
                                 </menu>
                             </div>
                         </div>
-                        <div class="post">
+                        <div class="post today-post">
                             <div class="post-inner">
                                 <div class="post-img">
                                     <img src="assets/img/post.jpg" alt="">
@@ -384,7 +351,7 @@
                         </div>
                     </div>
                 </div>
-                <aside class="browse">
+                <aside class="browse today-browse">
                     <div class="browse-inner">
                         <h1>Bu bloglara göz at</h1>
                         <div class="follow">
@@ -460,7 +427,7 @@
                                             <i class="fa-solid fa-ellipsis"></i>
                                         </div>
                                     </div>
-                                    <div class="radar-img">
+                                    <div class="radar-img today-img">
                                         <img src="assets/img/radar.jpg" alt="">
                                     </div>
                                     <div class="radar-fire">
@@ -496,6 +463,7 @@
             </div>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="assets/js/main.js"></script>

@@ -152,8 +152,35 @@ body {
     border-radius: 3px;
 }
 
+.mobil-header {
+    display: none;
+}
+
+.mobil-header .mobil-inner {
+    padding-top: 10px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobil-header .mobil-inner .nav-img img {
+    width: 20px;
+    height: 33px;
+}
+
+.mobil-header .mobil-inner i {
+    color: #a6a6a6;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .write-text {
     margin-top: 100px;
+}
+
+.today-text {
+    margin-top: 50px;
 }
 
 .write-text .write-text-inner {
@@ -163,10 +190,19 @@ body {
     flex-wrap: wrap;
 }
 
+.write-text .today-text-inner {
+    column-gap: 0;
+}
+
 .write-text .write-text-inner .write-text-content {
     display: flex;
     column-gap: 25px;
     position: relative;
+}
+
+.write-text .write-text-inner .today-text-content {
+    border-right: 1px solid var(--gray);
+    padding-right: 30px;
 }
 
 .write-text .write-text-inner .write-text-user img {
@@ -203,6 +239,10 @@ body {
     margin-top: 25px;
 }
 
+.today-btn {
+    margin-top: 30px;
+}
+
 .user-btn .user-btn-inner .user-btn-menu {
     display: flex;
     align-items: center;
@@ -231,6 +271,10 @@ body {
     margin-top: 20px;
     position: absolute;
     left: 0;
+}
+
+.today-post {
+    position: relative;
 }
 
 .post .post-inner {
@@ -315,6 +359,7 @@ body {
 .post .post-inner .post-user .post-content p {
     padding: 15px;
     line-height: 25px;
+    width: 540px;
 }
 
 .post .post-inner .post-user .post-content .post-hash {
@@ -338,6 +383,11 @@ body {
 
 .browse {
     width: 320px;
+}
+
+.today-browse {
+    padding-left: 30px;
+    margin-top: 30px;
 }
 
 .browse .browse-inner h1 {
@@ -506,6 +556,11 @@ body {
 
 .radar .radar-inner .radar-card .radar-img img {
     width: 320px;
+    height: 400px;
+}
+
+.radar .radar-inner .radar-card .today-img img {
+    width: 290px;
     height: 400px;
 }
 
