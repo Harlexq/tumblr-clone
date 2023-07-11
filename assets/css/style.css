@@ -153,6 +153,76 @@ body {
     border-radius: 3px;
 }
 
+.header .header-inner .nav .navbar .nav-item .fa-face-smile {
+    position: relative;
+}
+
+.header .header-inner .nav .navbar .smile {
+    position: absolute;
+    top: 45px;
+    display: none;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner {
+    background-color: #222222;
+    width: 280px;
+    height: 288px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-info {
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(var(--white-on-dark), .13);
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-info p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-info span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-info span:hover {
+    text-decoration: underline var(--blue);
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-body {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-body img {
+    width: 64px;
+    height: 64px;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-body p {
+    color: #b2b2b2;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-body .smile-content img {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    margin: 0 3px;
+}
+
 .mobil-header {
     display: none;
 }
