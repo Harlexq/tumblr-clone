@@ -15,8 +15,8 @@
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'today.php') echo 'active'; ?>" href="today.php"><i class="fa-regular fa-compass"></i></a>
                 <a class="nav-item" href="#"><i class="fa-solid fa-store"></i></a>
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'inbox.php') echo 'active'; ?>" href="inbox.php"><i class="fa-solid fa-envelope"></i></a>
-                <a class="nav-item" onclick="" href="#"><i class="fa-solid fa-face-smile"></i></a>
-                <div class="smile">
+                <a class="nav-item" onclick="smileFunction()" href="#"><i class="fa-solid fa-face-smile"></i></a>
+                <div class="smile" id="smile">
                     <div class="smile-inner">
                         <div class="smile-info">
                             <p>harlex0</p>
