@@ -138,6 +138,12 @@ body {
     color: #a6a6a6;
 }
 
+.header .header-inner .nav .navbar button.nav-item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .header .header-inner .nav .navbar .nav-item.active {
     color: #fff;
 }

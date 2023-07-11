@@ -13,9 +13,9 @@
             <menu class="navbar">
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') echo 'active'; ?>" href="index.php"><i class="fa-solid fa-house"></i></a>
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'today.php') echo 'active'; ?>" href="today.php"><i class="fa-regular fa-compass"></i></a>
-                <a class="nav-item" href="#"><i class="fa-solid fa-store"></i></a>
+                <button type="button" class="nav-item" onclick=""><i class="fa-solid fa-store"></i></button>
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'inbox.php') echo 'active'; ?>" href="inbox.php"><i class="fa-solid fa-envelope"></i></a>
-                <a class="nav-item" onclick="smileFunction()" href="#"><i class="fa-solid fa-face-smile"></i></a>
+                <button type="button" class="nav-item" onclick="smileFunction()"><i class="fa-solid fa-face-smile"></i></button>
                 <div class="smile" id="smile">
                     <div class="smile-inner">
                         <div class="smile-info">
@@ -33,9 +33,9 @@
                         </div>
                     </div>
                 </div>
-                <a class="nav-item" href="#"><i class="fa-solid fa-bolt-lightning"></i></a>
-                <a class="nav-item" href="#"><i class="fa-solid fa-user"></i></a>
-                <a class="nav-item nav-pencil" href="#"><i class="fa-solid fa-pencil"></i></a>
+                <button type="button" class="nav-item" onclick=""><i class="fa-solid fa-bolt-lightning"></i></button>
+                <button type="button" class="nav-item" onclick=""><i class="fa-solid fa-user"></i></button>
+                <button type="button" class="nav-item nav-pencil" onclick=""><i class="fa-solid fa-pencil"></i></button>
             </menu>
         </nav>
     </div>
