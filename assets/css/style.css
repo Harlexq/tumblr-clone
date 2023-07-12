@@ -1,7 +1,7 @@
 /*
-    Serhan BakÃ„Â±r
+    Serhan BakÃƒâ€žÃ‚Â±r
     Junior Web Developer
-    Ajans: Digital KÃƒÂ¼re
+    Ajans: Digital KÃƒÆ’Ã‚Â¼re
     Mail: serhan@digitalkure.com
 */
 
@@ -159,14 +159,23 @@ body {
     border-radius: 3px;
 }
 
-.header .header-inner .nav .navbar .nav-item .fa-face-smile {
+.header .header-inner .nav .navbar .nav-item .fa-face-smile,
+.header .header-inner .nav .navbar .nav-item .fa-bolt-lightning {
     position: relative;
 }
 
 .header .header-inner .nav .navbar .smile {
     position: absolute;
-    top: 45px;
+    top: 50px;
     display: none;
+}
+
+.header .header-inner .nav .navbar .smile.lightning {
+    right: 35px;
+}
+
+.header .header-inner .nav .navbar .smile.user {
+    display: block;
 }
 
 .header .header-inner .nav .navbar .smile .smile-inner {
@@ -175,6 +184,11 @@ body {
     height: 288px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+}
+
+.header .header-inner .nav .navbar .lightning .smile-inner {
+    width: 380px;
+    height: 186px;
 }
 
 .header .header-inner .nav .navbar .smile .smile-inner .smile-info {
@@ -198,8 +212,37 @@ body {
     cursor: pointer;
 }
 
+.header .header-inner .nav .navbar .smile .smile-inner .smile-info span hr {
+    width: 70px;
+    margin-top: 20px;
+}
+
 .header .header-inner .nav .navbar .smile .smile-inner .smile-info span:hover {
     text-decoration: underline var(--blue);
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .lightning-content-menu .lightning-menu-inner .lightning-menu {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .lightning-content-menu .lightning-menu-inner .lightning-menu button {
+    background-color: transparent;
+    color: #ababab;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    padding: 0 13px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .lightning-content-menu .lightning-menu-inner .lightning-menu button.active {
+    border-bottom: 2px solid var(--blue);
+    color: var(--blue);
 }
 
 .header .header-inner .nav .navbar .smile .smile-inner .smile-body {
@@ -220,6 +263,31 @@ body {
     font-size: 20px;
     font-weight: 600;
     line-height: 55px;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-body.lightning-body {
+    background-color: #323232;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    margin: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-body.lightning-body i {
+    color: #b7b7b7;
+}
+
+.header .header-inner .nav .navbar .smile .smile-inner .smile-body.lightning-body p {
+    font-size: 11px;
+    color: #dddddd;
+    line-height: normal;
+    text-align: center;
+    padding: 0 15px;
 }
 
 .header .header-inner .nav .navbar .smile .smile-inner .smile-body .smile-content img {
@@ -462,7 +530,6 @@ body {
 }
 
 .post {
-    margin-top: 20px;
     position: absolute;
     left: 0;
 }

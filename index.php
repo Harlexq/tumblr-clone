@@ -43,7 +43,7 @@
                             </div>
                             <div class="write-user-desc">
                                 <h2>Serhan Bakır</h2>
-                                <p>Junior Web Developert</p>
+                                <p>Junior Web Developer</p>
                             </div>
                         </header>
                     </div>
