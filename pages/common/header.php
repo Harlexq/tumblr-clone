@@ -63,7 +63,8 @@
                     <div class="user-inner">
                         <div class="user-info">
                             <p>Hesap</p>
-                            <button type="button" class="quit">Oturumu Kapat</button>
+                            <button type="button" onclick="" class="quit">Oturumu Kapat</button>
+
                         </div>
                         <nav class="user-content-menu">
                             <menu class="user-menu">
@@ -182,3 +183,11 @@
         </nav>
     </div>
 </header>
+
+<div class="quit-body">
+    <h2>Oturumu Kapatmak İstediğinden Emin<br>Misin?</h2>
+    <div class="quit-btn">
+        <button type="button" class="cancel-btn">İptal Et</button>
+        <button type="button" class="ok-btn">Tamam</button>
+    </div>
+</div>

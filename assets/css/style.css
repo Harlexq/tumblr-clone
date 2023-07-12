@@ -351,6 +351,39 @@ body {
     cursor: pointer;
 }
 
+.quit-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quit-body h2 {
+    text-align: center;
+}
+
+.quit-body button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.quit-body .cancel-btn {
+    background-color: #ffffffa6;
+}
+
+.quit-body .ok-btn {
+    background-color: #00b8ff;
+}
+
 .header .header-inner .nav .navbar .user .user-inner .user-info-main-footer {
     height: 48px;
     display: flex;
