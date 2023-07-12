@@ -122,6 +122,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>
@@ -161,6 +162,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>
@@ -200,6 +202,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>
@@ -239,6 +242,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>
@@ -278,6 +282,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>
@@ -317,6 +322,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>
@@ -356,6 +362,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>
@@ -395,6 +402,7 @@
                                             <div class="radar-intr-user">
                                                 <menu class="radar-menu">
                                                     <i class="fa-solid fa-share"></i>
+                                                    <i class="fa-regular fa-comment"></i>
                                                     <i class="fa-solid fa-retweet"></i>
                                                     <i class="fa-regular fa-heart"></i>
                                                 </menu>

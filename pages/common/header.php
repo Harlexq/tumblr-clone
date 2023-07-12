@@ -59,90 +59,124 @@
                     </div>
                 </div>
                 <button type="button" class="nav-item" id="navUser" onclick="toggleUserMenu()"><i class=" fa-solid fa-user"></i></button>
-                <!-- <div class="user" id="user">
+                <div class="user" id="user">
                     <div class="user-inner">
                         <div class="user-info">
                             <p>Hesap</p>
-                            <span>Oturumu Kapat</span>
+                            <button type="button" class="quit">Oturumu Kapat</button>
                         </div>
-                        <div class="user-content-menu">
-                            <nav class="user-menu-inner">
-                                <menu class="user-menu">
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Beğeniler</p>
+                        <nav class="user-content-menu">
+                            <menu class="user-menu">
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <p>Beğeniler</p>
+                                    </div>
+                                    <p class="date">0</p>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        <p>Takip edilenler</p>
+                                    </div>
+                                    <p class="date">5</p>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <p>Ayarlar</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-earth-americas"></i>
+                                        <p>Alan adları</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-rectangle-ad"></i>
+                                        <p>Reklamlardan Kurtul</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <p>Ödeme ve satın almalar</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-gift"></i>
+                                        <p>Hediyeler</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-regular fa-star"></i>
+                                        <p>Yeni ne var?</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-circle-question"></i>
+                                        <p>Yardım</p>
+                                    </div>
+                                </a>
+                                <button type="button" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-keyboard"></i>
+                                        <p>Klavye Kısayolları</p>
+                                    </div>
+                                </button>
+                                <button type="button" class="user-menu-item">
+                                    <div class="user-menu-icons">
+                                        <i class="fa-solid fa-palette"></i>
+                                        <p>Paleti Değiştir</p>
+                                    </div>
+                                </button>
+                            </menu>
+                        </nav>
+                        <div class="user-info-main">
+                            <p>Bloglar</p>
+                            <button type="button" class="quit">+ Yeni</button>
+                        </div>
+                        <div class="profile">
+                            <div class="profile-inner">
+                                <a href="#" class="profile-body">
+                                    <div class="profile-name">
+                                        <img src="assets/img/SerhanBakir.jpg" alt="">
+                                        <div class="profile-name-inner">
+                                            <p>harlex0</p>
+                                            <span>Serhan Bakır</span>
                                         </div>
-                                        <div class="">
-                                            <p>0</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Takip edilenler</p>
-                                        </div>
-                                        <p>5</p>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Ayarlar</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Alan adları</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Reklamlardan Kurtul</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Ödeme ve satın almalar</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Hediyeler</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Yeni ne var?</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Yardım</p>
-                                        </div>
-                                    </a>
-                                    <button type="button" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Klavye Kısayolları</p>
-                                        </div>
-                                    </button>
-                                    <button type="button" class="user-menu-item">
-                                        <div class="user-menu-icons">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <p>Karanlık Mod</p>
-                                        </div>
-                                    </button>
-                                </menu>
-                            </nav>
+                                    </div>
+                                    <div class="profil-toggle">
+                                        <i class="fa-solid fa-chevron-up"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="profile-intr">
+                            <menu class="profile-intr-menu">
+                                <a href="#" class="profil-intr-item">Gönderiler</a>
+                                <a href="#" class="profil-intr-item">Takipçiler</a>
+                                <a href="#" class="profil-intr-item">Etkinlik</a>
+                                <a href="#" class="profil-intr-item">Taslaklar</a>
+                                <a href="#" class="profil-intr-item">Sıradakiler</a>
+                                <a href="#" class="profil-intr-item">Tumblr'da Ateşleme</a>
+                                <a href="#" class="profil-intr-item">Blog ayarları</a>
+                                <a href="#" class="profil-intr-item">Toplu Gönderi Düzenleyici</a>
+                            </menu>
+                        </nav>
+                        <div class="user-info-main user-info-main-footer">
+                            <a href="#">Hakkında</a>
+                            <a href="#">Uygulamalar</a>
+                            <a href="#">Hukuki</a>
+                            <a href="#">Gizlilik</a>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <button type="button" class="nav-item nav-pencil" onclick=""><i class="fa-solid fa-pencil"></i></button>
             </menu>
         </nav>

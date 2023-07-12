@@ -91,7 +91,6 @@ body {
     width: 448px;
     color: var(--lightgray);
     caret-color: #fff;
-    padding: 0 5px;
     transition: .3s ease;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -99,7 +98,8 @@ body {
 
 .header .header-inner .navbar-brand .search .search-input::placeholder {
     color: var(--lightgray);
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .header .header-inner .navbar-brand .search .search-input:focus {
@@ -148,6 +148,10 @@ body {
     color: #fff;
 }
 
+.header .header-inner .nav .navbar .nav-item.show {
+    color: #fff;
+}
+
 .header .header-inner .nav .navbar .nav-item.nav-pencil {
     background-color: var(--blue);
     color: #000;
@@ -160,7 +164,8 @@ body {
 }
 
 .header .header-inner .nav .navbar .nav-item .fa-face-smile,
-.header .header-inner .nav .navbar .nav-item .fa-bolt-lightning {
+.header .header-inner .nav .navbar .nav-item .fa-bolt-lightning,
+.header .header-inner .nav .navbar .nav-item .fa-user {
     position: relative;
 }
 
@@ -295,6 +300,199 @@ body {
     height: 35px;
     border-radius: 4px;
     margin: 0 3px;
+}
+
+.header .header-inner .nav .navbar .user {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: none;
+}
+
+.header .header-inner .nav .navbar .user .user-inner {
+    background-color: #222222;
+    width: 225px;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: scroll;
+    border-radius: 4px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #323232;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info-main {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #323232;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info-main p {
+    font-size: 14px;
+    color: #ffffffa6;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info-main .quit {
+    font-size: 14px;
+    color: #ffffffa6;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info-main-footer {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info-main-footer a {
+    font-size: 12px;
+    color: #ffffffa6;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info-main-footer a:hover {
+    text-decoration: underline #ffffffa6;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info p {
+    font-size: 14px;
+    color: #ffffffa6;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-info .quit {
+    font-size: 14px;
+    color: #ffffffa6;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-content-menu .user-menu button.user-menu-item {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 210px;
+    height: 45px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-content-menu .user-menu .user-menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-content-menu .user-menu .user-menu-item:hover {
+    background-color: rgb(57, 57, 57);
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-content-menu .user-menu .user-menu-item .date {
+    color: #bababa;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-content-menu .user-menu .user-menu-item .user-menu-icons i {
+    font-size: 20px;
+    color: #bababa;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-content-menu .user-menu .user-menu-item .user-menu-icons p {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .user-content-menu .user-menu .user-menu-item .user-menu-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body:hover {
+    background-color: rgb(57, 57, 57);
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body .profile-name {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body .profile-name .profile-name-inner p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body .profile-name .profile-name-inner span {
+    font-size: 14px;
+    color: #ffffffa6;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body .profile-name img {
+    width: 37px;
+    height: 37px;
+    border-radius: 3px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile .profile-inner .profile-body .profil-toggle i {
+    font-size: 14px;
+    color: #ffffffa6;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile-intr .profile-intr-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile-intr .profile-intr-menu .profil-intr-item {
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile-intr .profile-intr-menu .profil-intr-item:hover {
+    background-color: rgb(57, 57, 57);
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile-intr .profile-intr-menu .profil-intr-item:first-child {
+    margin-top: 10px;
+}
+
+.header .header-inner .nav .navbar .user .user-inner .profile-intr .profile-intr-menu .profil-intr-item:last-child {
+    margin-bottom: 10px;
 }
 
 .mobil-header {

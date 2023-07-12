@@ -1,45 +1,56 @@
 function toggleSmileMenu() {
-    var smileMenu = document.getElementById("smile");
-    var smileNavs = document.getElementById("navSmile");
-    var lightningMenu = document.getElementById("lightning");
+    const smileMenu = document.getElementById("smile");
+    const lightningMenu = document.getElementById("lightning");
 
-    if (smileMenu.style.display === "block") {
-        smileMenu.style.display = "none";
-        smileNavs.style.color = "#a6a6a6";
-    } else {
-        smileMenu.style.display = "block";
-        lightningMenu.style.display = "none";
-        smileNavs.style.color = "#fff";
-    }
+    smileMenu.style.display = smileMenu.style.display === "block" ? "none" : "block";
+    lightningMenu.style.display = "none";
 }
 
 function toggleLightningMenu() {
-    var smileMenu = document.getElementById("smile");
-    var smileNavs = document.getElementById("navLightning");
-    var lightningMenu = document.getElementById("lightning");
+    const smileMenu = document.getElementById("smile");
+    const lightningMenu = document.getElementById("lightning");
 
-    if (lightningMenu.style.display === "block") {
-        lightningMenu.style.display = "none";
-        smileNavs.style.color = "#a6a6a6";
+    lightningMenu.style.display = lightningMenu.style.display === "block" ? "none" : "block";
+    smileMenu.style.display = "none";
+}
+
+function toggleUserMenu() {
+    const userDiv = document.getElementById("user");
+    const navUserDiv = document.getElementById("navUser");
+
+    if (!navUserDiv.classList.contains("show")) {
+        navUserDiv.classList.add("show");
+        userDiv.style.display = "block";
     } else {
-        lightningMenu.style.display = "block";
-        smileMenu.style.display = "none";
-        smileNavs.style.color = "#fff";
+        navUserDiv.classList.remove("show");
+        userDiv.style.display = "none";
     }
 }
 
 document.addEventListener("click", function (event) {
-    var smileMenu = document.getElementById("smile");
-    var navSmile = document.getElementById("navSmile");
-    var navLightning = document.getElementById("navLightning");
-    if (!event.target.closest("#smile") && !event.target.closest(".nav-item")) {
+    const userMenu = document.getElementById("user");
+    const navUserDiv = document.getElementById("navUser");
+
+    if (!event.target.closest("#user") && !event.target.closest("#navUser")) {
+        navUserDiv.classList.remove("show");
+        userMenu.style.display = "none";
+    }
+});
+
+document.addEventListener("click", function (event) {
+    const smileMenu = document.getElementById("smile");
+    const lightningMenu = document.getElementById("lightning");
+    const userMenu = document.getElementById("user");
+
+    if (!event.target.closest("#smile") && !event.target.closest("#navSmile")) {
         smileMenu.style.display = "none";
-        navSmile.style.color = "#a6a6a6";
     }
 
-    var smileMenu = document.getElementById("lightning");
-    if (!event.target.closest("#lightning") && !event.target.closest(".nav-item")) {
-        smileMenu.style.display = "none";
-        navLightning.style.color = "#a6a6a6";
+    if (!event.target.closest("#lightning") && !event.target.closest("#navLightning")) {
+        lightningMenu.style.display = "none";
+    }
+
+    if (!event.target.closest("#user") && !event.target.closest("#navUser")) {
+        userMenu.style.display = "none";
     }
 });
