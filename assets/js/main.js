@@ -126,6 +126,7 @@ document.addEventListener("click", function (event) {
         userMenu.style.display = "none";
     }
 });
+
 function toggleHeart(element) {
     if (element.classList.contains('active')) {
         element.style.color = "";
@@ -135,3 +136,40 @@ function toggleHeart(element) {
         element.classList.add('active');
     }
 }
+
+function metinToggleButton() {
+    var textEditor = document.getElementById("textEditor");
+    textEditor.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeTextEditor() {
+    var textEditor = document.getElementById("textEditor");
+    textEditor.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+var closeButton = document.querySelector(".btn-close");
+closeButton.addEventListener("click", closeTextEditor);
+
+function FotografToggleButton() {
+    var fotografEditor = document.getElementById("fotografEditor");
+    fotografEditor.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeFotografEditor() {
+    var fotografEditor = document.getElementById("fotografEditor");
+    fotografEditor.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+var closeButton = document.querySelector("#fotografEditor .btn-close");
+closeButton.addEventListener("click", closeFotografEditor);
+
+var closeButton = document.querySelector(".fa-x");
+
+closeButton.addEventListener("click", function () {
+    var uploadSection = document.querySelector(".text-editor-upload");
+    uploadSection.style.display = "none";
+});

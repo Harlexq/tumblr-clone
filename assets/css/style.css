@@ -94,6 +94,7 @@ body {
     transition: .3s ease;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-size: 15px;
 }
 
 .header .header-inner .navbar-brand .search .search-input::placeholder {
@@ -821,15 +822,237 @@ body {
 .write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu .write-info-item {
     text-align: center;
     color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu .write-info-item img {
     transition: .3s;
+    width: 45px;
+    height: 45px;
 }
 
-.write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu .write-info-item img:hover {
+.write-text .write-text-inner .write-text-info .write-info-inner .write-info-menu .write-info-item:hover img {
     transform: translateY(-4px);
 }
+
+.text-editor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text-editor .text-editor-inner {
+    display: flex;
+    column-gap: 25px;
+}
+
+.text-editor .text-editor-inner .text-editor-img img {
+    width: 64px;
+    height: 64px;
+    border-radius: 3px;
+}
+
+.text-editor .text-editor-inner .text-editor-body {
+    width: 540px;
+    overflow: hidden;
+    background-color: #222222;
+    border-radius: 4px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-info {
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-info p,
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-info i {
+    font-size: 16px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-info i {
+    cursor: pointer;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-upload {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    border: 2px dashed rgba(255, 255, 255, .07);
+    position: relative;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-upload .fa-x {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #ff4930;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-upload:hover .fa-x {
+    display: flex;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-upload button {
+    background-color: transparent;
+    border: none;
+    color: #848484;
+    cursor: pointer;
+    padding: 24px 103px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-upload .text-editor-upload-img {
+    border-right: 1px solid rgba(255, 255, 255, .13);
+}
+
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-upload button i {
+    font-size: 50px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-upload button p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-title,
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-text {
+    padding: 0 20px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-title input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    background-color: #222222;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-title input::placeholder {
+    font-size: 26px;
+    color: #767676;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-text textarea {
+    height: 143px;
+    overflow: hidden;
+    outline: none;
+    background-color: #222222;
+    border: none;
+    color: #fff;
+    resize: none;
+    font-size: 16px
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-text textarea::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-hash {
+    cursor: pointer;
+    background-color: #2d2d2d;
+    width: 350px;
+    height: 44px;
+    margin: 20px;
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-hash p {
+    color: #adadad;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-hash p:hover {
+    color: #fff;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-intr {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top: 1px solid rgba(255, 255, 255, .13);
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-intr .text-editor-close .btn-close {
+    background-color: #3f3f3f;
+    border: none;
+    width: 84px;
+    height: 32px;
+    border-radius: 44px;
+    color: rgba(255, 255, 255, .65);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-gear {
+    display: flex;
+    column-gap: 20px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-gear .btn-ever {
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    color: #fff;
+    background-color: transparent;
+    height: 34px;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 16px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-gear .btn-ever i {
+    font-size: 10px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-gear .btn-send {
+    border: none;
+    color: #000;
+    background-color: #00b8ff;
+    height: 34px;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 16px;
+}
+
 
 .user-btn {
     margin-top: 25px;
