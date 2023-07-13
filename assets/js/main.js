@@ -173,3 +173,39 @@ closeButton.addEventListener("click", function () {
     var uploadSection = document.querySelector(".text-editor-upload");
     uploadSection.style.display = "none";
 });
+
+function AlintiToggleButton() {
+    var alintiEditor = document.getElementById("alintiEditor");
+    alintiEditor.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeAlintiEditor() {
+    var alintiEditor = document.getElementById("alintiEditor");
+    alintiEditor.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+var alintiButton = document.querySelector(".alintiBtn");
+alintiButton.addEventListener("click", AlintiToggleButton);
+
+var closeButton = document.querySelector("#alintiEditor .btn-close");
+closeButton.addEventListener("click", closeAlintiEditor);
+
+function BaglantiToggleButton() {
+    var baglantiEditor = document.getElementById("baglantiEditor");
+    baglantiEditor.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeBaglantiEditor() {
+    var baglantiEditor = document.getElementById("baglantiEditor");
+    baglantiEditor.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+var baglantiButton = document.querySelector(".baglantiBtn");
+baglantiButton.addEventListener("click", BaglantiToggleButton);
+
+var closeButton = document.querySelector("#baglantiEditor .btn-close");
+closeButton.addEventListener("click", closeBaglantiEditor);

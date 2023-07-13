@@ -113,9 +113,6 @@
                                                     </button>
                                                     <i class="fa-solid fa-x"></i>
                                                 </div>
-                                                <div class="text-editor-title">
-                                                    <input type="text" placeholder="Başlık">
-                                                </div>
                                                 <div class="text-editor-text">
                                                     <textarea placeholder="Canın ne isterse ekle"></textarea>
                                                 </div>
@@ -135,11 +132,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="write-info-item">
+                                <button onclick="AlintiToggleButton()" class="write-info-item alintiBtn">
                                     <img src="assets/img/alinti.png" alt="">
                                     <p>Alıntı</p>
                                 </button>
-                                <div class="text-editor" id="fotografEditor">
+                                <div class="text-editor" id="alintiEditor">
                                     <div class="text-editor-inner">
                                         <div class="text-editor-img">
                                             <img src="assets/img/SerhanBakir.jpg" alt="">
@@ -150,6 +147,44 @@
                                                     <p>harlex0</p>
                                                     <i class="fa-solid fa-gear"></i>
                                                 </div>
+                                                <div class="text-editor-text alinti-text">
+                                                    <textarea placeholder="Başka birinden duyduğumuz şeyler buraya"></textarea>
+                                                </div>
+                                                <div class="text-editor-hash">
+                                                    <p>#etiketde koy ki gönderdin bulunabilsin</p>
+                                                </div>
+                                                <div class="text-editor-intr">
+                                                    <div class="text-editor-close">
+                                                        <button type="button" class="btn-close">Kapat</button>
+                                                    </div>
+                                                    <div class="text-editor-gear">
+                                                        <button type="button" class="btn-ever">Herkes İçin Uygun <i class="fa-solid fa-angle-down"></i></button>
+                                                        <button type="button" class="btn-send">Şimdi Gönder | <i class="fa-solid fa-angle-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button onclick="BaglantiToggleButton()" class="write-info-item baglantiBtn">
+                                    <img src="assets/img/baglanti.png" alt="">
+                                    <p>Bağlantı</p>
+                                </button>
+                                <div class="text-editor" id="baglantiEditor">
+                                    <div class="text-editor-inner">
+                                        <div class="text-editor-img">
+                                            <img src="assets/img/SerhanBakir.jpg" alt="">
+                                        </div>
+                                        <div class="text-editor-body">
+                                            <div class="text-editor-content">
+                                                <div class="text-editor-info">
+                                                    <p>harlex0</p>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </div>
+                                                <div class="text-editor-upload text-editor-link">
+                                                    <input type="link" placeholder="Bağlantı yaz yada yapıştır">
+                                                    <i class="fa-solid fa-x"></i>
+                                                </div>
                                                 <div class="text-editor-text">
                                                     <textarea placeholder="Canın ne isterse ekle"></textarea>
                                                 </div>
@@ -169,10 +204,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="write-info-item">
-                                    <img src="assets/img/baglanti.png" alt="">
-                                    <p>Bağlantı</p>
-                                </button>
                                 <button class="write-info-item">
                                     <img src="assets/img/sohbet.png" alt="">
                                     <p>Sohbet</p>
