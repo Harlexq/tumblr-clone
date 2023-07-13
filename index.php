@@ -205,7 +205,7 @@
                                 }
                                 ?>
                             </div>
-                            <a href="#" class="discovery">Tumblr'da keşfe çık</a>
+                            <a href="today.php" class="discovery">Tumblr'da keşfe çık</a>
                         </div>
                         <h1 class="radar-title">Radar</h1>
                         <div class="radar">
