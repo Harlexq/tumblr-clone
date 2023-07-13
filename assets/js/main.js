@@ -67,10 +67,52 @@ document.addEventListener("click", function (event) {
     }
 });
 
+
+function openQuitModal() {
+    var modal = document.getElementById("quitModal");
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeQuitModal() {
+    var modal = document.getElementById("quitModal");
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+function confirmQuitModal() {
+    closeQuitModal();
+}
+
+var modal = document.getElementById("quitModal");
+modal.addEventListener("click", function (event) {
+    event.stopPropagation();
+});
+
+function togglePencilModal() {
+    var modal = document.getElementById("pencilModal");
+    if (modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    } else {
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
+
+window.addEventListener("click", function (event) {
+    var modal = document.getElementById("pencilModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+});
+
 document.addEventListener("click", function (event) {
     const smileMenu = document.getElementById("smile");
     const lightningMenu = document.getElementById("lightning");
     const userMenu = document.getElementById("user");
+    const pencilModal = document.getElementById("pencilModal");
 
     if (!event.target.closest("#smile") && !event.target.closest("#navSmile")) {
         smileMenu.style.display = "none";
@@ -84,3 +126,12 @@ document.addEventListener("click", function (event) {
         userMenu.style.display = "none";
     }
 });
+function toggleHeart(element) {
+    if (element.classList.contains('active')) {
+        element.style.color = "";
+        element.classList.remove('active');
+    } else {
+        element.style.color = "red";
+        element.classList.add('active');
+    }
+}

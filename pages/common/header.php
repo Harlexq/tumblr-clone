@@ -63,8 +63,7 @@
                     <div class="user-inner">
                         <div class="user-info">
                             <p>Hesap</p>
-                            <button type="button" onclick="" class="quit">Oturumu Kapat</button>
-
+                            <button type="button" onclick="openQuitModal()" class="quit">Oturumu Kapat</button>
                         </div>
                         <nav class="user-content-menu">
                             <menu class="user-menu">
@@ -178,16 +177,61 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="nav-item nav-pencil" onclick=""><i class="fa-solid fa-pencil"></i></button>
+                <button type="button" class="nav-item nav-pencil" id="navPencil" onclick="togglePencilModal()"><i class="fa-solid fa-pencil"></i></button>
             </menu>
         </nav>
     </div>
 </header>
 
-<div class="quit-body">
+<div id="quitModal" class="quit-body">
     <h2>Oturumu Kapatmak İstediğinden Emin<br>Misin?</h2>
     <div class="quit-btn">
-        <button type="button" class="cancel-btn">İptal Et</button>
-        <button type="button" class="ok-btn">Tamam</button>
+        <button type="button" onclick="closeQuitModal()" class="cancel-btn">İptal Et</button>
+        <button type="button" onclick="" class="ok-btn">Tamam</button>
     </div>
+</div>
+
+<div class="pencil-body" id="pencilModal">
+    <button type="button" class="pencil-item btn-white">
+        <div class="btn-img">
+            <img src="assets/img/metin-black.png" alt="">
+        </div>
+        <p>Metin</p>
+    </button>
+    <button type="button" class="pencil-item btn-red">
+        <div class="btn-img">
+            <img src="assets/img/fotograf-black.png" alt="">
+        </div>
+        <p>Fotoğraf</p>
+    </button>
+    <button type="button" class="pencil-item btn-orange">
+        <div class="btn-img">
+            <img src="assets/img/alinti-black.png" alt="">
+        </div>
+        <p>Alıntı</p>
+    </button>
+    <button type="button" class="pencil-item btn-green">
+        <div class="btn-img">
+            <img src="assets/img/baglanti-black.png" alt="">
+        </div>
+        <p>Bağlantı</p>
+    </button>
+    <button type="button" class="pencil-item btn-blue">
+        <div class="btn-img">
+            <img src="assets/img/sohbet-black.png" alt="">
+        </div>
+        <p>Sohbet</p>
+    </button>
+    <button type="button" class="pencil-item btn-slateblue">
+        <div class="btn-img">
+            <img src="assets/img/ses-black.png" alt="">
+        </div>
+        <p>Ses</p>
+    </button>
+    <button type="button" class="pencil-item btn-pink">
+        <div class="btn-img">
+            <img src="assets/img/video-black.png" alt="">
+        </div>
+        <p>Video</p>
+    </button>
 </div>
