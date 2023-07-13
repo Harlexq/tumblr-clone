@@ -1300,13 +1300,13 @@ body {
     top: 95%;
 }
 
-.inbox-info-menu {
-    position: fixed;
-    bottom: 0;
-}
-
 .tumblr-info-menu a {
     color: var(--blue);
     font-size: 12px;
     margin: 0 10px 0 0;
+}
+
+.inbox-info-menu {
+    position: fixed;
+    bottom: 0;
 }
