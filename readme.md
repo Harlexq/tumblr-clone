@@ -39,6 +39,10 @@ Bu adımları takip ederek, klonlanmış proje için yerel bir web sunucusu üze
 <strong>JavaScript:</strong> Web sayfalarında etkileşimli öğeler ve işlevler eklemek için kullanılan bir betik dili.
 <strong>PHP:</strong> Sunucu tarafında çalışan, dinamik web sayfaları oluşturmak için kullanılan bir betik dili.
 
+## Lisans
+
+Bu projenin lisans bilgileri için LICENSE dosyasını inceleyin.
+
 <br>
 
 ```sh
@@ -81,4 +85,8 @@ By following these steps, you can run the cloned project on a local web server. 
 <strong>CSS:</strong> The style structure language used to edit the style and appearance of web pages.
 <strong>JavaScript:</strong> A scripting language used to add interactive elements and functionality to web pages.
 <strong>PHP:</strong> A server-side scripting language used to create dynamic web pages.
+
+## Licence
+
+See the LICENSE file for license information for this project.
 <br>
