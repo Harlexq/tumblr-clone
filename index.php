@@ -50,7 +50,7 @@
                     <div class="write-text-info">
                         <div class="write-info-inner">
                             <menu class="write-info-menu">
-                                <button onclick="metinToggleButton()" class="write-info-item textBtn">
+                                <button onclick="toggleTextEditor()" class="write-info-item textBtn">
                                     <img src="assets/img/metin.png" alt="">
                                     <p>Metin</p>
                                 </button>
@@ -87,7 +87,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button onclick="FotografToggleButton()" class="write-info-item fotografBtn">
+                                <button onclick="toggleImageEditor()" class="write-info-item fotografBtn">
                                     <img src="assets/img/fotograf.png" alt="">
                                     <p>Fotoğraf</p>
                                 </button>
@@ -111,7 +111,7 @@
                                                         <i class="fa-solid fa-globe"></i>
                                                         <p>İnternetten resim yükle</p>
                                                     </button>
-                                                    <i class="fa-solid fa-x"></i>
+                                                    <i onclick="CloseImageEditor()" class="fa-solid fa-x"></i>
                                                 </div>
                                                 <div class="text-editor-text">
                                                     <textarea placeholder="Canın ne isterse ekle"></textarea>
@@ -132,7 +132,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button onclick="AlintiToggleButton()" class="write-info-item alintiBtn">
+                                <button onclick="toggleQuoteEditor()" class="write-info-item alintiBtn">
                                     <img src="assets/img/alinti.png" alt="">
                                     <p>Alıntı</p>
                                 </button>
@@ -166,7 +166,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button onclick="BaglantiToggleButton()" class="write-info-item baglantiBtn">
+                                <button onclick="toggleLinkEditor()" class="write-info-item baglantiBtn">
                                     <img src="assets/img/baglanti.png" alt="">
                                     <p>Bağlantı</p>
                                 </button>
@@ -183,7 +183,7 @@
                                                 </div>
                                                 <div class="text-editor-upload text-editor-link">
                                                     <input type="link" placeholder="Bağlantı yaz yada yapıştır">
-                                                    <i onclick="BaglantiCloseButton()" class="fa-solid fa-x"></i>
+                                                    <i onclick="CloseLinkButton()" class="fa-solid fa-x"></i>
                                                 </div>
                                                 <div class="text-editor-text">
                                                     <textarea placeholder="Canın ne isterse ekle"></textarea>
@@ -204,7 +204,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button onclick="SohbetToggleButton()" class="write-info-item sohbetBtn">
+                                <button onclick="toggleChatEditor()" class="write-info-item sohbetBtn">
                                     <img src="assets/img/sohbet.png" alt="">
                                     <p>Sohbet</p>
                                 </button>
@@ -241,7 +241,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button onclick="SesToggleButton()" class="write-info-item sesBtn">
+                                <button onclick="toggleAudioEditor()" class="write-info-item sesBtn">
                                     <img src="assets/img/ses.png" alt="">
                                     <p>Ses</p>
                                 </button>
@@ -265,7 +265,7 @@
                                                         <i class="fa-solid fa-globe"></i>
                                                         <p>İnternetten ses ekle</p>
                                                     </button>
-                                                    <i onclick="SesCloseButton()" class="fa-solid fa-x"></i>
+                                                    <i onclick="CloseVoiceButton()" class="fa-solid fa-x"></i>
                                                 </div>
                                                 <div class="text-editor-text">
                                                     <textarea placeholder="Canın ne isterse ekle"></textarea>
@@ -286,7 +286,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button onclick="VideoToggleButton()" class="write-info-item videoBtn">
+                                <button onclick="toggleVideoEditor()" class="write-info-item videoBtn">
                                     <img src="assets/img/video.png" alt="">
                                     <p>Video</p>
                                 </button>
@@ -310,7 +310,7 @@
                                                         <i class="fa-solid fa-globe"></i>
                                                         <p>İnternetten bir video ekle</p>
                                                     </button>
-                                                    <i onclick="VideoCloseButton()" class="fa-solid fa-x"></i>
+                                                    <i onclick="CloseVideoButton()" class="fa-solid fa-x"></i>
                                                 </div>
                                                 <div class="text-editor-text">
                                                     <textarea placeholder="Canın ne isterse ekle"></textarea>
