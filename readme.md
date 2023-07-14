@@ -34,10 +34,11 @@ Bu adımları takip ederek, klonlanmış proje için yerel bir web sunucusu üze
 
 ## Kullanılan Teknolojiler
 
-## <strong>HTML:</strong> Web sayfalarının yapısını oluşturmak için kullanılan işaretleme dili.
-## <strong>CSS:</strong> Web sayfalarının stilini ve görünümünü düzenlemek için kullanılan stil yapısı dili.
-## <strong>JavaScript:</strong> Web sayfalarında etkileşimli öğeler ve işlevler eklemek için kullanılan bir betik dili.
-## <strong>PHP:</strong> Sunucu tarafında çalışan, dinamik web sayfaları oluşturmak için kullanılan bir betik dili.
+<strong>HTML:</strong> Web sayfalarının yapısını oluşturmak için kullanılan işaretleme dili.
+<strong>CSS:</strong> Web sayfalarının stilini ve görünümünü düzenlemek için kullanılan stil yapısı dili.
+<strong>JavaScript:</strong> Web sayfalarında etkileşimli öğeler ve işlevler eklemek için kullanılan bir betik dili.
+<strong>PHP:</strong> Sunucu tarafında çalışan, dinamik web sayfaları oluşturmak için kullanılan bir betik dili.
+
 <br>
 
 ```sh
@@ -76,8 +77,8 @@ By following these steps, you can run the cloned project on a local web server. 
 
 ## Used technologies
 
-### <strong>HTML:</strong> The markup language used to build the structure of web pages.
-### <strong>CSS:</strong> The style structure language used to edit the style and appearance of web pages.
-### <strong>JavaScript:</strong> A scripting language used to add interactive elements and functionality to web pages.
-### <strong>PHP:</strong> A server-side scripting language used to create dynamic web pages.
+<strong>HTML:</strong> The markup language used to build the structure of web pages.
+<strong>CSS:</strong> The style structure language used to edit the style and appearance of web pages.
+<strong>JavaScript:</strong> A scripting language used to add interactive elements and functionality to web pages.
+<strong>PHP:</strong> A server-side scripting language used to create dynamic web pages.
 <br>
