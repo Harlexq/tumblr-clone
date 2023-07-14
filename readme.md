@@ -54,7 +54,7 @@ You can follow the steps below to run the Project:
 
 First, you need to download the project from GitHub. You can download the project to your computer by clicking the "Clone or download" button on the main page of the project on the GitHub page. Alternatively, you can clone the project using the following command:
 
-``sh
+```sh
 git clone https://github.com/Harlexq/tumblr-clone.git
 ```
 
@@ -64,7 +64,7 @@ Start the web server application and copy the project files to the server's work
 
 After running the web server, open your browser and visit the following URL:
 
-``sh
+```sh
 http://localhost/tumblr-clone/
 ```
 
