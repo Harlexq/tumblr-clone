@@ -34,10 +34,10 @@ Bu adımları takip ederek, klonlanmış proje için yerel bir web sunucusu üze
 
 ## Kullanılan Teknolojiler
 
-### <strong>HTML:</strong> Web sayfalarının yapısını oluşturmak için kullanılan işaretleme dili.
-### <strong>CSS:</strong> Web sayfalarının stilini ve görünümünü düzenlemek için kullanılan stil yapısı dili.
-### <strong>JavaScript:</strong> Web sayfalarında etkileşimli öğeler ve işlevler eklemek için kullanılan bir betik dili.
-### <strong>PHP:</strong> Sunucu tarafında çalışan, dinamik web sayfaları oluşturmak için kullanılan bir betik dili.
+## <strong>HTML:</strong> Web sayfalarının yapısını oluşturmak için kullanılan işaretleme dili.
+## <strong>CSS:</strong> Web sayfalarının stilini ve görünümünü düzenlemek için kullanılan stil yapısı dili.
+## <strong>JavaScript:</strong> Web sayfalarında etkileşimli öğeler ve işlevler eklemek için kullanılan bir betik dili.
+## <strong>PHP:</strong> Sunucu tarafında çalışan, dinamik web sayfaları oluşturmak için kullanılan bir betik dili.
 <br>
 
 ```sh
