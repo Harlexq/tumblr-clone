@@ -203,3 +203,41 @@ function CloseVideoButton() {
     const closeImageEditor = document.querySelector("#videoEditor .text-editor-upload");
     closeImageEditor.style.display = "none";
 }
+
+var buttons = document.querySelectorAll('.lightning-menu button');
+
+buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        buttons.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+        button.classList.add('active');
+    });
+});
+
+var btnMenu = document.querySelectorAll('.user-btn-item');
+var post = document.querySelector('.post'); 
+
+btnMenu.forEach(function (button) {
+    button.addEventListener('click', function () {
+        btnMenu.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+        button.classList.add('active');
+
+        const buttonOne = button.textContent.trim();
+        if (buttonOne === 'Senin İçin') {
+            post.style.display = 'block';
+        } else {
+            post.style.display = 'none';
+        }
+
+        const buttonTwo = button.textContent.trim();
+        if (buttonTwo === 'Takip edilenler') {
+            post.style.display = 'block';
+        } else {
+            post.style.display = 'none';
+        }
+    });
+});
+

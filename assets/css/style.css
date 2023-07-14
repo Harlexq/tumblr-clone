@@ -1133,6 +1133,10 @@ body {
 .user-btn .user-btn-inner .user-btn-menu .user-btn-item {
     color: #fff;
     padding: 14px 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .user-btn .user-btn-inner .user-btn-menu .user-btn-item:hover {

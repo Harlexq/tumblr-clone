@@ -336,10 +336,10 @@
                         <div class="user-btn">
                             <div class="user-btn-inner">
                                 <menu class="user-btn-menu">
-                                    <a class="user-btn-item active" href="#">Senin İçin</a>
-                                    <a class="user-btn-item" href="#">Takip edilenler</a>
-                                    <a class="user-btn-item" href="#">Etiketlerin</a>
-                                    <a class="user-btn-item" href="#">Yönet...</a>
+                                    <button type="button" class="user-btn-item active">Senin İçin</button>
+                                    <button type="button" class="user-btn-item">Takip edilenler</button>
+                                    <button type="button" class="user-btn-item">Etiketlerin</button>
+                                    <button type="button" class="user-btn-item">Yönet...</button>
                                 </menu>
                             </div>
                         </div>
