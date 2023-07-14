@@ -166,7 +166,8 @@ body {
 
 .header .header-inner .nav .navbar .nav-item .fa-face-smile,
 .header .header-inner .nav .navbar .nav-item .fa-bolt-lightning,
-.header .header-inner .nav .navbar .nav-item .fa-user {
+.header .header-inner .nav .navbar .nav-item .fa-user,
+.header .header-inner .nav .navbar .nav-item .fa-store {
     position: relative;
 }
 
@@ -350,6 +351,89 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.header .header-inner .nav .navbar .store {
+    position: absolute;
+    top: 50px;
+    right: 205px;
+    background-color: #222222;
+    width: 380px;
+    height: 620px;
+    border-radius: 20px;
+    padding: 0 20px;
+    overflow: auto;
+    display: none;
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-title {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-title p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-title .store-btn-flex .store-btn {
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .25);
+    cursor: pointer;
+    border-radius: 38px;
+    font-size: 16px;
+    padding: 0 8px;
+    color: rgba(255, 255, 255, .65);
+    font-weight: 600;
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-title .store-btn-flex .store-btn.active {
+    background-color: rgb(0, 184, 255);
+    color: rgb(34, 34, 34);
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-content {
+    display: flex;
+    margin: 30px 0;
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-content .store-content-img img {
+    border: 2px solid;
+    border-radius: 16px;
+    width: 98px;
+    height: 98px;
+    margin-right: 20px;
+    box-shadow: 4px 4px;
+    color: rgb(0, 184, 255);
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-content .store-content-body p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-content .store-content-body span {
+    font-size: 14px;
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-content .store-content-body .store-content-btn {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.header .header-inner .nav .navbar .store .store-inner .store-content .store-content-body .store-content-btn button {
+    background-color: rgba(0, 184, 255, 0.25);
+    color: rgb(124, 92, 255);
+    height: 36px;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
 }
 
 .quit-body {

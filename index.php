@@ -343,7 +343,7 @@
                                 </menu>
                             </div>
                         </div>
-                        <div class="post">
+                        <div class="post" id="postOne">
                             <?php
                             for ($i = 0; $i < 5; $i++) {
                             ?>
@@ -390,6 +390,271 @@
                                 <div class="post-inner">
                                     <div class="post-img">
                                         <img src="assets/img/post.jpg" alt="">
+                                    </div>
+                                    <div class="post-user">
+                                        <div class="post-user-info">
+                                            <div class="post-user-name">
+                                                <p>harlex</p>
+                                                <button type="button">Takip Et</button>
+                                            </div>
+                                            <div class="post-user-intr">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="post-content">
+                                            <img src="assets/img/postcontent.jpg" alt="">
+                                            <div class="post-hash">
+                                                <span>#codelove</span>
+                                                <span>#hmmm</span>
+                                                <span>#harlex</span>
+                                            </div>
+                                            <div class="radar-fire">
+                                                <p><i class="fa-solid fa-fire"></i> Ateşle</p>
+                                            </div>
+                                            <div class="radar-intr">
+                                                <div class="radar-intr-not">
+                                                    <p><strong>1.186</strong> not</p>
+                                                </div>
+                                                <div class="radar-intr-user">
+                                                    <menu class="radar-menu">
+                                                        <i class="fa-solid fa-share"></i>
+                                                        <i class="fa-regular fa-comment"></i>
+                                                        <i class="fa-solid fa-retweet"></i>
+                                                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"></i>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                        <div class="post" id="postTwo">
+                            <?php
+                            for ($i = 0; $i < 5; $i++) {
+                            ?>
+                                <div class="post-inner">
+                                    <div class="post-img">
+                                        <img src="assets/img/posttwo.jpg" alt="">
+                                    </div>
+                                    <div class="post-user">
+                                        <div class="post-user-info">
+                                            <div class="post-user-name">
+                                                <p>harlex</p>
+                                                <button type="button">Takip Et</button>
+                                            </div>
+                                            <div class="post-user-intr">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="post-content">
+                                            <img src="assets/img/postcontent.jpg" alt="">
+                                            <p>Merhaba, ben Serkan Bakır. Web geliştirme alanında kendimi geliştirmek ve kariyerime sağlam bir başlangıç yapmak amacıyla Reklam Ajanslarında Junior Web Developer olarak staj yaptım. Orta seviyede HTML, CSS, Bootstrap ve Temel seviyede JavaScript bilgisine sahibim ve bu becerilerimi projelerimde başarıyla kullanıyorum. Ayrıca, web tasarımı, kullanıcı deneyimi ve dijital pazarlama trendleri hakkında da kendimi sürekli olarak güncelliyorum. Profesyonel hedeflerim arasında yaratıcı, işlevsel ve etkileyici web siteleri tasarlamak yer alıyor. Sektörde kendimi geliştirerek, diğer uzmanlarla işbirliği yaparak ve müşterilerin ihtiyaçlarını anlayarak daha iyi bir web geliştirme deneyimi sunmak için çalışıyorum.</p>
+                                            <div class="post-hash">
+                                                <span>#codelove</span>
+                                                <span>#hmmm</span>
+                                                <span>#harlex</span>
+                                            </div>
+                                            <div class="radar-fire">
+                                                <p><i class="fa-solid fa-fire"></i> Ateşle</p>
+                                            </div>
+                                            <div class="radar-intr">
+                                                <div class="radar-intr-not">
+                                                    <p><strong>1.186</strong> not</p>
+                                                </div>
+                                                <div class="radar-intr-user">
+                                                    <menu class="radar-menu">
+                                                        <i class="fa-solid fa-share"></i>
+                                                        <i class="fa-regular fa-comment"></i>
+                                                        <i class="fa-solid fa-retweet"></i>
+                                                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"></i>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-inner">
+                                    <div class="post-img">
+                                        <img src="assets/img/posttwo.jpg" alt="">
+                                    </div>
+                                    <div class="post-user">
+                                        <div class="post-user-info">
+                                            <div class="post-user-name">
+                                                <p>harlex</p>
+                                                <button type="button">Takip Et</button>
+                                            </div>
+                                            <div class="post-user-intr">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="post-content">
+                                            <img src="assets/img/postcontent.jpg" alt="">
+                                            <div class="post-hash">
+                                                <span>#codelove</span>
+                                                <span>#hmmm</span>
+                                                <span>#harlex</span>
+                                            </div>
+                                            <div class="radar-fire">
+                                                <p><i class="fa-solid fa-fire"></i> Ateşle</p>
+                                            </div>
+                                            <div class="radar-intr">
+                                                <div class="radar-intr-not">
+                                                    <p><strong>1.186</strong> not</p>
+                                                </div>
+                                                <div class="radar-intr-user">
+                                                    <menu class="radar-menu">
+                                                        <i class="fa-solid fa-share"></i>
+                                                        <i class="fa-regular fa-comment"></i>
+                                                        <i class="fa-solid fa-retweet"></i>
+                                                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"></i>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                        <div class="post" id="postThree">
+                            <?php
+                            for ($i = 0; $i < 5; $i++) {
+                            ?>
+                                <div class="post-inner">
+                                    <div class="post-img">
+                                        <img src="assets/img/postthree.jpg" alt="">
+                                    </div>
+                                    <div class="post-user">
+                                        <div class="post-user-info">
+                                            <div class="post-user-name">
+                                                <p>harlex</p>
+                                                <button type="button">Takip Et</button>
+                                            </div>
+                                            <div class="post-user-intr">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="post-content">
+                                            <p>Merhaba, ben Serkan Bakır. Web geliştirme alanında kendimi geliştirmek ve kariyerime sağlam bir başlangıç yapmak amacıyla Reklam Ajanslarında Junior Web Developer olarak staj yaptım. Orta seviyede HTML, CSS, Bootstrap ve Temel seviyede JavaScript bilgisine sahibim ve bu becerilerimi projelerimde başarıyla kullanıyorum. Ayrıca, web tasarımı, kullanıcı deneyimi ve dijital pazarlama trendleri hakkında da kendimi sürekli olarak güncelliyorum. Profesyonel hedeflerim arasında yaratıcı, işlevsel ve etkileyici web siteleri tasarlamak yer alıyor. Sektörde kendimi geliştirerek, diğer uzmanlarla işbirliği yaparak ve müşterilerin ihtiyaçlarını anlayarak daha iyi bir web geliştirme deneyimi sunmak için çalışıyorum.</p>
+                                            <div class="post-hash">
+                                                <span>#codelove</span>
+                                                <span>#hmmm</span>
+                                                <span>#harlex</span>
+                                            </div>
+                                            <div class="radar-fire">
+                                                <p><i class="fa-solid fa-fire"></i> Ateşle</p>
+                                            </div>
+                                            <div class="radar-intr">
+                                                <div class="radar-intr-not">
+                                                    <p><strong>1.186</strong> not</p>
+                                                </div>
+                                                <div class="radar-intr-user">
+                                                    <menu class="radar-menu">
+                                                        <i class="fa-solid fa-share"></i>
+                                                        <i class="fa-regular fa-comment"></i>
+                                                        <i class="fa-solid fa-retweet"></i>
+                                                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"></i>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-inner">
+                                    <div class="post-img">
+                                        <img src="assets/img/postthree.jpg" alt="">
+                                    </div>
+                                    <div class="post-user">
+                                        <div class="post-user-info">
+                                            <div class="post-user-name">
+                                                <p>harlex</p>
+                                                <button type="button">Takip Et</button>
+                                            </div>
+                                            <div class="post-user-intr">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="post-content">
+                                            <img src="assets/img/postcontent.jpg" alt="">
+                                            <div class="post-hash">
+                                                <span>#codelove</span>
+                                                <span>#hmmm</span>
+                                                <span>#harlex</span>
+                                            </div>
+                                            <div class="radar-fire">
+                                                <p><i class="fa-solid fa-fire"></i> Ateşle</p>
+                                            </div>
+                                            <div class="radar-intr">
+                                                <div class="radar-intr-not">
+                                                    <p><strong>1.186</strong> not</p>
+                                                </div>
+                                                <div class="radar-intr-user">
+                                                    <menu class="radar-menu">
+                                                        <i class="fa-solid fa-share"></i>
+                                                        <i class="fa-regular fa-comment"></i>
+                                                        <i class="fa-solid fa-retweet"></i>
+                                                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"></i>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                        <div class="post" id="postFour">
+                            <?php
+                            for ($i = 0; $i < 5; $i++) {
+                            ?>
+                                <div class="post-inner">
+                                    <div class="post-img">
+                                        <img src="assets/img/postfour.jpg" alt="">
+                                    </div>
+                                    <div class="post-user">
+                                        <div class="post-user-info">
+                                            <div class="post-user-name">
+                                                <p>harlex</p>
+                                                <button type="button">Takip Et</button>
+                                            </div>
+                                            <div class="post-user-intr">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="post-content">
+                                            <p>Merhaba, ben Serkan Bakır. Web geliştirme alanında kendimi geliştirmek ve kariyerime sağlam bir başlangıç yapmak amacıyla Reklam Ajanslarında Junior Web Developer olarak staj yaptım. Orta seviyede HTML, CSS, Bootstrap ve Temel seviyede JavaScript bilgisine sahibim ve bu becerilerimi projelerimde başarıyla kullanıyorum. Ayrıca, web tasarımı, kullanıcı deneyimi ve dijital pazarlama trendleri hakkında da kendimi sürekli olarak güncelliyorum. Profesyonel hedeflerim arasında yaratıcı, işlevsel ve etkileyici web siteleri tasarlamak yer alıyor. Sektörde kendimi geliştirerek, diğer uzmanlarla işbirliği yaparak ve müşterilerin ihtiyaçlarını anlayarak daha iyi bir web geliştirme deneyimi sunmak için çalışıyorum.</p>
+                                            <div class="post-hash">
+                                                <span>#codelove</span>
+                                                <span>#hmmm</span>
+                                                <span>#harlex</span>
+                                            </div>
+                                            <div class="radar-fire">
+                                                <p><i class="fa-solid fa-fire"></i> Ateşle</p>
+                                            </div>
+                                            <div class="radar-intr">
+                                                <div class="radar-intr-not">
+                                                    <p><strong>1.186</strong> not</p>
+                                                </div>
+                                                <div class="radar-intr-user">
+                                                    <menu class="radar-menu">
+                                                        <i class="fa-solid fa-share"></i>
+                                                        <i class="fa-regular fa-comment"></i>
+                                                        <i class="fa-solid fa-retweet"></i>
+                                                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"></i>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-inner">
+                                    <div class="post-img">
+                                        <img src="assets/img/postfour.jpg" alt="">
                                     </div>
                                     <div class="post-user">
                                         <div class="post-user-info">

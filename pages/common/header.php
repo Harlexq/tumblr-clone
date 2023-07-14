@@ -13,7 +13,39 @@
             <menu class="navbar">
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') echo 'active'; ?>" href="index.php"><i class="fa-solid fa-house"></i></a>
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'today.php') echo 'active'; ?>" href="today.php"><i class="fa-regular fa-compass"></i></a>
-                <button type="button" class="nav-item" onclick=""><i class="fa-solid fa-store"></i></button>
+                <button type="button" class="nav-item" id="navStore" onclick="toggleStoreMenu()"><i class="fa-solid fa-store"></i></button>
+                <div class="store" id="store">
+                    <div class="store-inner">
+                        <div class="store-title">
+                            <p>TumblrMarket</p>
+                            <div class="store-btn-flex">
+                                <button type="button" class="store-btn active">Tümü</button>
+                                <button type="button" class="store-btn">Ürünler</button>
+                                <button type="button" class="store-btn">Hediyeler</button>
+                                <button type="button" class="store-btn">Rozetler</button>
+                            </div>
+                        </div>
+                        <?php
+                        for ($i = 0; $i < 20; $i++) {
+                        ?>
+                            <div class="store-content">
+                                <div class="store-content-img">
+                                    <img src="assets/img/store1.gif" alt="">
+                                </div>
+                                <div class="store-content-body">
+                                    <p>Çok Havalı Rengarenk İnternet Tikleri</p>
+                                    <span>Havalı olmak hiç bu kadar renkli olmamıştı!</span>
+                                    <div class="store-content-btn">
+                                        <button type="button">Mağazaya Git</button>
+                                        <button type="button"><i class="fa-solid fa-gift"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                </div>
                 <a class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'inbox.php') echo 'active'; ?>" href="inbox.php"><i class="fa-solid fa-envelope"></i></a>
                 <button type="button" class="nav-item" id="navSmile" onclick="toggleSmileMenu()"><i class="fa-solid fa-face-smile"></i></button>
                 <div class="smile" id="smile">

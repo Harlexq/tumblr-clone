@@ -44,6 +44,29 @@ document.addEventListener("click", function (event) {
     }
 });
 
+function toggleStoreMenu() {
+    const storeDiv = document.getElementById("store");
+    const navStoreDiv = document.getElementById("navStore");
+
+    if (!navStoreDiv.classList.contains("show")) {
+        navStoreDiv.classList.add("show");
+        storeDiv.style.display = "block";
+    } else {
+        navStoreDiv.classList.remove("show");
+        storeDiv.style.display = "none";
+    }
+}
+
+document.addEventListener("click", function (event) {
+    const storeMenu = document.getElementById("store");
+    const navStoreDiv = document.getElementById("navStore");
+
+    if (!event.target.closest("#store") && !event.target.closest("#navStore")) {
+        navStoreDiv.classList.remove("show");
+        storeMenu.style.display = "none";
+    }
+});
+
 function toggleUserMenu() {
     const userDiv = document.getElementById("user");
     const navUserDiv = document.getElementById("navUser");
@@ -215,10 +238,25 @@ buttons.forEach(function (button) {
     });
 });
 
+var stores = document.querySelectorAll('.store-btn-flex button');
+
+stores.forEach(function (button) {
+    button.addEventListener('click', function () {
+        stores.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+        button.classList.add('active');
+    });
+});
+
 var btnMenu = document.querySelectorAll('.user-btn-item');
-var post = document.querySelector('.post'); 
+var postOne = document.getElementById('postOne');
+var postTwo = document.getElementById('postTwo');
+var postThree = document.getElementById('postThree');
+var postFour = document.getElementById('postFour');
 
 btnMenu.forEach(function (button) {
+    btnMenu[0].click();
     button.addEventListener('click', function () {
         btnMenu.forEach(function (btn) {
             btn.classList.remove('active');
@@ -227,16 +265,34 @@ btnMenu.forEach(function (button) {
 
         const buttonOne = button.textContent.trim();
         if (buttonOne === 'Senin İçin') {
-            post.style.display = 'block';
-        } else {
-            post.style.display = 'none';
+            postOne.style.display = 'block';
+            postTwo.style.display = 'none';
+            postThree.style.display = 'none';
+            postFour.style.display = 'none';
         }
 
         const buttonTwo = button.textContent.trim();
         if (buttonTwo === 'Takip edilenler') {
-            post.style.display = 'block';
-        } else {
-            post.style.display = 'none';
+            postOne.style.display = 'none';
+            postTwo.style.display = 'block';
+            postThree.style.display = 'none';
+            postFour.style.display = 'none';
+        }
+
+        const buttonThree = button.textContent.trim();
+        if (buttonThree === 'Etiketlerin') {
+            postOne.style.display = 'none';
+            postTwo.style.display = 'none';
+            postThree.style.display = 'block';
+            postFour.style.display = 'none';
+        }
+
+        const buttonFour = button.textContent.trim();
+        if (buttonFour === 'Yönet...') {
+            postOne.style.display = 'none';
+            postTwo.style.display = 'none';
+            postThree.style.display = 'none';
+            postFour.style.display = 'block';
         }
     });
 });
