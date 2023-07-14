@@ -954,11 +954,20 @@ body {
     background-color: #222222;
     border: none;
     color: #fff;
-    padding: 0 20px;
+    padding: 51px 20px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-link input:focus {
+    box-shadow: 0 0 5px rgb(0, 184, 255);
 }
 
 .text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-link input::placeholder {
     font-size: 18px;
+    color: rgba(255, 255, 255, .4);
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-link input:focus::placeholder {
+    color: rgba(255, 255, 255, .25);
 }
 
 .text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-title,
@@ -978,7 +987,11 @@ body {
 
 .text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-title input::placeholder {
     font-size: 26px;
-    color: #767676;
+    color: rgba(255, 255, 255, .4);
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-title input:focus::placeholder {
+    color: rgba(255, 255, 255, .25);
 }
 
 .text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-text textarea {
@@ -997,6 +1010,21 @@ body {
 .text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-text textarea::placeholder {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    color: rgba(255, 255, 255, .4);
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .sohbet-editor-sohbet textarea {
+    height: 168px;
+    font-size: 15px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .sohbet-editor-sohbet textarea::placeholder {
+    font-family: Courier, monospace;
+    line-height: 25px;
+}
+
+.text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-text textarea:focus::placeholder {
+    color: rgba(255, 255, 255, .25);
 }
 
 .text-editor .text-editor-inner .text-editor-body .text-editor-content .text-editor-text.alinti-text textarea {

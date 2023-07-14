@@ -152,6 +152,10 @@ function closeTextEditor() {
 var closeButton = document.querySelector(".btn-close");
 closeButton.addEventListener("click", closeTextEditor);
 
+
+
+
+
 function FotografToggleButton() {
     var fotografEditor = document.getElementById("fotografEditor");
     fotografEditor.style.display = "flex";
@@ -174,6 +178,9 @@ closeButton.addEventListener("click", function () {
     uploadSection.style.display = "none";
 });
 
+
+
+
 function AlintiToggleButton() {
     var alintiEditor = document.getElementById("alintiEditor");
     alintiEditor.style.display = "flex";
@@ -192,6 +199,9 @@ alintiButton.addEventListener("click", AlintiToggleButton);
 var closeButton = document.querySelector("#alintiEditor .btn-close");
 closeButton.addEventListener("click", closeAlintiEditor);
 
+
+
+
 function BaglantiToggleButton() {
     var baglantiEditor = document.getElementById("baglantiEditor");
     baglantiEditor.style.display = "flex";
@@ -209,3 +219,82 @@ baglantiButton.addEventListener("click", BaglantiToggleButton);
 
 var closeButton = document.querySelector("#baglantiEditor .btn-close");
 closeButton.addEventListener("click", closeBaglantiEditor);
+
+function BaglantiCloseButton() {
+    var linkElement = document.querySelector('.text-editor-link');
+    linkElement.style.display = 'none';
+}
+
+
+
+
+function SohbetToggleButton() {
+    var sohbetEditor = document.getElementById("sohbetEditor");
+    sohbetEditor.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeSohbetEditor() {
+    var sohbetEditor = document.getElementById("sohbetEditor");
+    sohbetEditor.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+var sohbetButton = document.querySelector(".sohbetBtn");
+sohbetButton.addEventListener("click", SohbetToggleButton);
+
+var closeButton = document.querySelector("#sohbetEditor .btn-close");
+closeButton.addEventListener("click", closeSohbetEditor);
+
+
+
+
+function SesToggleButton() {
+    var sesEditor = document.getElementById("sesEditor");
+    sesEditor.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeSesEditor() {
+    var sesEditor = document.getElementById("sesEditor");
+    sesEditor.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+var sesButton = document.querySelector(".sesBtn");
+sesButton.addEventListener("click", SesToggleButton);
+
+var closeButton = document.querySelector("#sesEditor .btn-close");
+closeButton.addEventListener("click", closeSesEditor);
+
+function SesCloseButton() {
+    var textEditorUpload = document.querySelector("#sesEditor .text-editor-upload");
+    textEditorUpload.style.display = "none";
+}
+
+
+
+
+
+function VideoToggleButton() {
+    var videoEditor = document.getElementById("videoEditor");
+    videoEditor.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeVideoEditor() {
+    var videoEditor = document.getElementById("videoEditor");
+    videoEditor.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+var videoButton = document.querySelector(".videoBtn");
+videoButton.addEventListener("click", VideoToggleButton);
+
+var closeButton = document.querySelector("#videoEditor .btn-close");
+closeButton.addEventListener("click", closeVideoEditor);
+
+function VideoCloseButton() {
+    var textEditorUpload = document.querySelector("#videoEditor .text-editor-upload");
+    textEditorUpload.style.display = "none";
+}

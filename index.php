@@ -183,7 +183,7 @@
                                                 </div>
                                                 <div class="text-editor-upload text-editor-link">
                                                     <input type="link" placeholder="Bağlantı yaz yada yapıştır">
-                                                    <i class="fa-solid fa-x"></i>
+                                                    <i onclick="BaglantiCloseButton()" class="fa-solid fa-x"></i>
                                                 </div>
                                                 <div class="text-editor-text">
                                                     <textarea placeholder="Canın ne isterse ekle"></textarea>
@@ -204,18 +204,133 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="write-info-item">
+                                <button onclick="SohbetToggleButton()" class="write-info-item sohbetBtn">
                                     <img src="assets/img/sohbet.png" alt="">
                                     <p>Sohbet</p>
                                 </button>
-                                <button class="write-info-item">
+                                <div class="text-editor" id="sohbetEditor">
+                                    <div class="text-editor-inner">
+                                        <div class="text-editor-img">
+                                            <img src="assets/img/SerhanBakir.jpg" alt="">
+                                        </div>
+                                        <div class="text-editor-body">
+                                            <div class="text-editor-content">
+                                                <div class="text-editor-info">
+                                                    <p>harlex0</p>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </div>
+                                                <div class="text-editor-title">
+                                                    <input type="text" placeholder="Başlık">
+                                                </div>
+                                                <div class="text-editor-text sohbet-editor-sohbet">
+                                                    <textarea placeholder="Edebiyatçı: Alp Er Tunga öldi mü? Isız ajun kaldı mu? Hakan: Hocam Acun yeni bir şov hazırlıyormuş. Edebiyatçı: Beni matematik dersine verin demiştim bu yüzden. Hakan: Sayısal zeka gerektiren bir şov olacağını sanmıyorum hocam."></textarea>
+                                                </div>
+                                                <div class="text-editor-hash">
+                                                    <p>#etiketde koy ki gönderdin bulunabilsin</p>
+                                                </div>
+                                                <div class="text-editor-intr">
+                                                    <div class="text-editor-close">
+                                                        <button type="button" class="btn-close">Kapat</button>
+                                                    </div>
+                                                    <div class="text-editor-gear">
+                                                        <button type="button" class="btn-ever">Herkes İçin Uygun <i class="fa-solid fa-angle-down"></i></button>
+                                                        <button type="button" class="btn-send">Şimdi Gönder | <i class="fa-solid fa-angle-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button onclick="SesToggleButton()" class="write-info-item sesBtn">
                                     <img src="assets/img/ses.png" alt="">
                                     <p>Ses</p>
                                 </button>
-                                <button class="write-info-item">
+                                <div class="text-editor" id="sesEditor">
+                                    <div class="text-editor-inner">
+                                        <div class="text-editor-img">
+                                            <img src="assets/img/SerhanBakir.jpg" alt="">
+                                        </div>
+                                        <div class="text-editor-body">
+                                            <div class="text-editor-content">
+                                                <div class="text-editor-info">
+                                                    <p>harlex0</p>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </div>
+                                                <div class="text-editor-upload">
+                                                    <button type="button" class="text-editor-upload-img">
+                                                        <i class="fa-solid fa-headphones-simple"></i>
+                                                        <p>Ses dosyası yükle</p>
+                                                    </button>
+                                                    <button type="button" class="text-editor-upload-net">
+                                                        <i class="fa-solid fa-globe"></i>
+                                                        <p>İnternetten ses ekle</p>
+                                                    </button>
+                                                    <i onclick="SesCloseButton()" class="fa-solid fa-x"></i>
+                                                </div>
+                                                <div class="text-editor-text">
+                                                    <textarea placeholder="Canın ne isterse ekle"></textarea>
+                                                </div>
+                                                <div class="text-editor-hash">
+                                                    <p>#etiketde koy ki gönderdin bulunabilsin</p>
+                                                </div>
+                                                <div class="text-editor-intr">
+                                                    <div class="text-editor-close">
+                                                        <button type="button" class="btn-close">Kapat</button>
+                                                    </div>
+                                                    <div class="text-editor-gear">
+                                                        <button type="button" class="btn-ever">Herkes İçin Uygun <i class="fa-solid fa-angle-down"></i></button>
+                                                        <button type="button" class="btn-send">Şimdi Gönder | <i class="fa-solid fa-angle-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button onclick="VideoToggleButton()" class="write-info-item videoBtn">
                                     <img src="assets/img/video.png" alt="">
                                     <p>Video</p>
                                 </button>
+                                <div class="text-editor" id="videoEditor">
+                                    <div class="text-editor-inner">
+                                        <div class="text-editor-img">
+                                            <img src="assets/img/SerhanBakir.jpg" alt="">
+                                        </div>
+                                        <div class="text-editor-body">
+                                            <div class="text-editor-content">
+                                                <div class="text-editor-info">
+                                                    <p>harlex0</p>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </div>
+                                                <div class="text-editor-upload">
+                                                    <button type="button" class="text-editor-upload-img">
+                                                        <i class="fa-solid fa-video"></i>
+                                                        <p>Video yükle</p>
+                                                    </button>
+                                                    <button type="button" class="text-editor-upload-net">
+                                                        <i class="fa-solid fa-globe"></i>
+                                                        <p>İnternetten bir video ekle</p>
+                                                    </button>
+                                                    <i onclick="VideoCloseButton()" class="fa-solid fa-x"></i>
+                                                </div>
+                                                <div class="text-editor-text">
+                                                    <textarea placeholder="Canın ne isterse ekle"></textarea>
+                                                </div>
+                                                <div class="text-editor-hash">
+                                                    <p>#etiketde koy ki gönderdin bulunabilsin</p>
+                                                </div>
+                                                <div class="text-editor-intr">
+                                                    <div class="text-editor-close">
+                                                        <button type="button" class="btn-close">Kapat</button>
+                                                    </div>
+                                                    <div class="text-editor-gear">
+                                                        <button type="button" class="btn-ever">Herkes İçin Uygun <i class="fa-solid fa-angle-down"></i></button>
+                                                        <button type="button" class="btn-send">Şimdi Gönder | <i class="fa-solid fa-angle-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </menu>
                         </div>
                         <div class="user-btn">
